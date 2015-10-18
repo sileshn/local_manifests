@@ -7,8 +7,8 @@
 <project name="android_kernel_samsung_msm8930-common" path="kernel/samsung/msm8930-common" remote="sileshn" revision="cm-13.0" />
 <project name="android_device_samsung_msm8930-common" path="device/samsung/msm8930-common" remote="sileshn" revision="cm-13.0" />
 
-<project name="SlimRoms/device_samsung_qcom-common" path="device/samsung/qcom-common" remote="github" revision="mm6.0-staging" />
-<project name="SlimRoms/hardware_samsung" path="hardware/samsung" remote="github" revision="mm6.0-staging" />
+<project name="SlimRoms/device_samsung_qcom-common" path="device/samsung/qcom-common" remote="github" revision="mm6.0" />
+<project name="SlimRoms/hardware_samsung" path="hardware/samsung" remote="github" revision="lp5.1" />
 
 <project path="packages/apps/OTAUpdates" name="MatthewBooth/OTAUpdates" remote="github" revision="aosp" />
 
