@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+<remote name="sileshn" fetch="https://github.com/sileshn"/>
+<project path="device/samsung/meliusltexx" name="android_device_samsung_meliusltexx" remote="sileshn" revision="slimmm" />
+<project path="device/samsung/melius-common" name="android_device_samsung_melius-common" remote="sileshn" revision="slimmm" />
+<project path="vendor/samsung" name="proprietary_vendor_samsung" remote="sileshn" revision="cm-13.0" />
+<project name="android_kernel_samsung_msm8930-common" path="kernel/samsung/msm8930-common" remote="sileshn" revision="cm-13.0" />
+<project name="android_device_samsung_msm8930-common" path="device/samsung/msm8930-common" remote="sileshn" revision="cm-13.0" />
+
+<project name="SlimRoms/device_samsung_qcom-common" path="device/samsung/qcom-common" remote="github" revision="mm6.0-staging" />
+<project name="SlimRoms/hardware_samsung" path="hardware/samsung" remote="github" revision="mm6.0-staging" />
+
+<project path="packages/apps/OTAUpdates" name="MatthewBooth/OTAUpdates" remote="github" revision="aosp" />
+
+<remove-project name="platform/developers/build" />
+<remove-project name="platform/developers/demos" />
+<remove-project name="platform/developers/docs" />
+<remove-project name="platform/developers/samples/android" />
+
+<remove-project name="device/common" />
+<remove-project name="device/generic/arm64" />
+<remove-project name="device/generic/armv7-a-neon" />
+<remove-project name="device/generic/common" />
+<remove-project name="device/generic/goldfish" />
+<remove-project name="device/generic/mips" />
+<remove-project name="device/generic/mini-emulator-arm64" />
+<remove-project name="device/generic/mini-emulator-armv7-a-neon" />
+<remove-project name="device/generic/mini-emulator-mips" />
+<remove-project name="device/generic/mini-emulator-x86" />
+<remove-project name="device/generic/mini-emulator-x86_64" />
+<remove-project name="device/generic/qemu" />
+<remove-project name="device/generic/x86" />
+<remove-project name="device/generic/x86_64" />
+<remove-project name="device/google/accessory/arduino" />
+<remove-project name="device/google/accessory/demokit" />
+<remove-project name="device/google/atv" />
+<remove-project name="platform/docs/source.android.com" />
+<remove-project name="device/sample" />
+
+
+<remove-project name="platform/hardware/intel/audio_media" />
+<remove-project name="platform/hardware/intel/bootstub" />
+<remove-project name="platform/hardware/intel/common/bd_prov" />
+<remove-project name="SlimRoms/hardware_intel_common_libmix" />
+<remove-project name="SlimRoms/hardware_intel_common_libstagefrighthw" />
+<remove-project name="SlimRoms/hardware_intel_common_libva" />
+<remove-project name="platform/hardware/intel/common/libwsbm" />
+<remove-project name="SlimRoms/hardware_intel_common_omx-components" />
+<remove-project name="SlimRoms/hardware_intel_common_utils" />
+<remove-project name="SlimRoms/hardware_intel_common_wrs_omxil_core" />
+<remove-project name="SlimRoms/hardware_intel_img_hwcomposer" />
+<remove-project name="SlimRoms/hardware_intel_img_psb_video" />
+<remove-project name="platform/hardware/intel/sensors" />
+
+<remove-project name="platform/hardware/marvell/bt" />
+<remove-project name="platform/hardware/mediatek" />
+<remove-project name="platform/hardware/nvidia/audio" />
+
+<remove-project name="SlimRoms/hardware_samsung_slsi_exynos5" />
+<remove-project name="SlimRoms/hardware_ti_omap3" />
+<remove-project name="SlimRoms/hardware_ti_omap4" />
+<remove-project name="SlimRoms/hardware_ti_omap4xxx" />
+<remove-project name="SlimRoms/hardware_ti_wlan" />
+<remove-project name="SlimRoms/hardware_ti_wpan" />
+
+<remove-project name="platform/packages/apps/Camera" />
+<remove-project name="platform/packages/apps/FMRadio" />
+<remove-project name="platform/packages/apps/Gallery" />
+<remove-project name="platform/packages/apps/LegacyCamera" />
+
+<remove-project name="platform/packages/screensavers/Basic" />
+<remove-project name="platform/packages/screensavers/PhotoTable" />
+<remove-project name="platform/packages/screensavers/WebView" />
+
+<remove-project name="platform/packages/wallpapers/Galaxy4" />
+<remove-project name="platform/packages/wallpapers/HoloSpiral" />
+<remove-project name="platform/packages/wallpapers/MagicSmoke" />
+<remove-project name="platform/packages/wallpapers/NoiseField" />
+<remove-project name="platform/packages/wallpapers/PhaseBeam" />
+
+<remove-project name="platform/prebuilts/clang/darwin-x86/host/3.6" />
+<remove-project name="platform/prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.9" />
+<remove-project name="platform/prebuilts/gcc/darwin-x86/arm/arm-eabi-4.8" />
+<remove-project name="platform/prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.9" />
+<remove-project name="platform/prebuilts/gcc/darwin-x86/host/headers" />
+<remove-project name="platform/prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1" />
+<remove-project name="platform/prebuilts/gcc/darwin-x86/mips/mips64el-linux-android-4.9" />
+<remove-project name="platform/prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9" />
+<remove-project name="platform/prebuilts/python/darwin-x86/2.7.5" />
+
+<remove-project name="SlimRoms/android_prebuilt" />
+
+</manifest>
+
