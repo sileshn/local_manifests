@@ -6,9 +6,9 @@
 <project path="device/samsung/meliusltexx" name="android_device_samsung_meliusltexx" remote="sileshn" revision="cm-13.0" />
 <project path="device/samsung/melius-common" name="android_device_samsung_melius-common" remote="sileshn" revision="cm-13.0" />
 <project path="vendor/samsung" name="proprietary_vendor_samsung" remote="sileshn" revision="cm-13.0" />
-<project name="android_kernel_samsung_msm8930-common" path="kernel/samsung/msm8930-common" remote="sileshn" revision="cm-13.0" />
-<project name="android_device_samsung_msm8930-common" path="device/samsung/msm8930-common" remote="sileshn" revision="cm-13.0" />
 
+<project name="CyanogenMod/android_kernel_samsung_msm8930-common" path="kernel/samsung/msm8930-common" remote="github" revision="cm-13.0" />
+<project name="CyanogenMod/android_device_samsung_msm8930-common" path="device/samsung/msm8930-common" remote="github" revision="cm-13.0" />
 <project name="CyanogenMod/android_device_qcom_common" path="device/qcom/common" remote="github" revision="cm-13.0" />
 <project name="CyanogenMod/android_device_samsung_qcom-common" path="device/samsung/qcom-common" remote="github" revision="cm-13.0" />
 <project name="CyanogenMod/android_hardware_samsung" path="hardware/samsung" remote="github" revision="cm-13.0" />
@@ -90,5 +90,6 @@
 
 <remove-project name="platform/packages/apps/LegacyCamera" />
 <remove-project name="platform/packages/apps/QuickSearchBox" />
+<remove-project name="CyanogenMod/android_packages_apps_Camera2" />
 
 </manifest>
