@@ -25,7 +25,6 @@
 <remove-project name="CyanogenMod/android_device_google_atv" />
 
 <remove-project name="CyanogenMod/android_hardware_nvidia_audio" />
-<remove-project name="CyanogenMod/android_hardware_nvidia_tegra124" />
 
 <remove-project name="CyanogenMod/android_hardware_samsung_slsi_exynos5" />
 <remove-project name="CyanogenMod/android_hardware_ti_omap4" />
@@ -88,8 +87,5 @@
 <remove-project name="platform/hardware/mediatek" />
 <remove-project name="platform/hardware/ti/omap3" />
 
-<remove-project name="platform/packages/apps/LegacyCamera" />
-<remove-project name="platform/packages/apps/QuickSearchBox" />
 <remove-project name="CyanogenMod/android_packages_apps_Camera2" />
-
 </manifest>
