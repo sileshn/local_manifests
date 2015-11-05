@@ -8,8 +8,6 @@
 <project path="vendor/samsung" name="proprietary_vendor_samsung" remote="sileshn" revision="cm-12.1" />
 <project name="android_kernel_samsung_msm8930-common" path="kernel/samsung/msm8930-common" remote="sileshn" revision="cm-12.1" />
 
-<project name="android_kernel_samsung_msm8930-common" path="kernel/samsung/msm8930-common-oc" remote="sileshn" revision="temasek" />
-
 <project name="CyanogenMod/android_device_samsung_msm8930-common" path="device/samsung/msm8930-common" remote="github" revision="cm-12.1" />
 <project name="CyanogenMod/android_device_qcom_common" path="device/qcom/common" remote="github" revision="cm-12.1" />
 <project name="CyanogenMod/android_device_samsung_qcom-common" path="device/samsung/qcom-common" remote="github" revision="cm-12.1" />
@@ -38,9 +36,6 @@
 <remove-project name="device/google/accessory/arduino" />
 <remove-project name="device/google/accessory/demokit" />
 
-<remove-project name="CyanogenMod/android_hardware_nvidia_audio" />
-<remove-project name="CyanogenMod/android_hardware_nvidia_tegra124" />
-
 <remove-project name="platform/prebuilts/clang/darwin-x86/3.1" />
 <remove-project name="platform/prebuilts/clang/darwin-x86/3.2" />
 <remove-project name="platform/prebuilts/clang/darwin-x86/arm/3.3" />
@@ -68,15 +63,15 @@
 <remove-project name="platform/hardware/intel/audio_media" />
 <remove-project name="platform/hardware/intel/bootstub" />
 <remove-project name="platform/hardware/intel/common/bd_prov" />
-<remove-project name="platform/hardware/intel/common/libmix" />
+<remove-project name="CyanogenMod/android_hardware_intel_common_libmix" />
 <remove-project name="platform/hardware/intel/common/libstagefrighthw" />
 <remove-project name="platform/hardware/intel/common/libva" />
 <remove-project name="platform/hardware/intel/common/libwsbm" />
 <remove-project name="platform/hardware/intel/common/omx-components" />
 <remove-project name="platform/hardware/intel/common/utils" />
 <remove-project name="platform/hardware/intel/common/wrs_omxil_core" />
-<remove-project name="platform/hardware/intel/img/hwcomposer" />
-<remove-project name="platform/hardware/intel/img/libdrm" />
+<remove-project name="CyanogenMod/android_hardware_intel_img_hwcomposer" />
+<remove-project name="CyanogenMod/android_hardware_intel_img_libdrm" />
 <remove-project name="platform/hardware/intel/img/psb_headers" />
 <remove-project name="platform/hardware/intel/img/psb_video" />
 
