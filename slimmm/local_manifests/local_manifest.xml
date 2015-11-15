@@ -12,6 +12,7 @@
 <project name="SlimRoms/hardware_samsung" path="hardware/samsung" remote="github" revision="mm6.0" />
 
 <project path="packages/apps/OTAUpdates" name="MatthewBooth/OTAUpdates" remote="github" revision="aosp" />
+<project name="CyanogenMod/android_hardware_sony_timekeep" path="hardware/sony/timekeep" remote="github" revision="cm-13.0" />
 
 <remove-project name="platform/developers/build" />
 <remove-project name="platform/developers/demos" />
