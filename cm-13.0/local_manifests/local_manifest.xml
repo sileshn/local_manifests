@@ -14,7 +14,6 @@
 <project name="CyanogenMod/android_hardware_samsung" path="hardware/samsung" remote="github" revision="cm-13.0" />
 <project name="CyanogenMod/android_packages_apps_SamsungServiceMode" path="packages/apps/SamsungServiceMode" remote="github" revision="cm-13.0" />
 <project name="CyanogenMod/android_external_stlport" path="external/stlport" remote="github" revision="cm-13.0" />
-<project name="CyanogenMod/android_hardware_sony_timekeep" path="hardware/sony/timekeep" remote="github" revision="cm-13.0" />
 
 <project path="packages/apps/OTAUpdates" name="MatthewBooth/OTAUpdates" remote="github" revision="aosp" />
 
@@ -25,8 +24,6 @@
 <remove-project name="CyanogenMod/android_device_generic_goldfish" />
 <remove-project name="CyanogenMod/android_device_generic_mips" />
 <remove-project name="CyanogenMod/android_device_google_atv" />
-
-<remove-project name="CyanogenMod/android_hardware_nvidia_audio" />
 
 <remove-project name="CyanogenMod/android_hardware_samsung_slsi_exynos5" />
 <remove-project name="CyanogenMod/android_hardware_ti_omap4" />
@@ -77,17 +74,18 @@
 <remove-project name="CyanogenMod/android_hardware_intel_common_libmix" />
 <remove-project name="platform/hardware/intel/common/libstagefrighthw" />
 <remove-project name="platform/hardware/intel/common/libva" />
-<remove-project name="platform/hardware/intel/common/libwsbm" />
+<remove-project name="CyanogenMod/android_hardware_intel_common_libwsbm" />
 <remove-project name="platform/hardware/intel/common/omx-components" />
 <remove-project name="platform/hardware/intel/common/utils" />
 <remove-project name="platform/hardware/intel/common/wrs_omxil_core" />
 <remove-project name="CyanogenMod/android_hardware_intel_img_hwcomposer" />
 <remove-project name="platform/hardware/intel/img/psb_headers" />
-<remove-project name="platform/hardware/intel/img/psb_video" />
+<remove-project name="CyanogenMod/android_hardware_intel_img_psb_video" />
 <remove-project name="platform/hardware/intel/sensors" />
 <remove-project name="platform/hardware/marvell/bt" />
 <remove-project name="platform/hardware/mediatek" />
 <remove-project name="platform/hardware/ti/omap3" />
 
 <remove-project name="CyanogenMod/android_packages_apps_Camera2" />
+
 </manifest>
