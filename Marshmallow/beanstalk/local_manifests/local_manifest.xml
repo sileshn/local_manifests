@@ -9,8 +9,8 @@
 <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9-linaro" name="UBERTC/arm-linux-androideabi-4.9" remote="bitbucket" revision="master" />
 <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-5.2-linaro" name="UBERTC/arm-linux-androideabi-5.2" remote="bitbucket" revision="master" />
 
-<project path="device/samsung/meliusltexx" name="android_device_samsung_meliusltexx" remote="sileshn" revision="cm-13.0" />
-<project path="device/samsung/melius3gxx" name="android_device_samsung_melius3gxx" remote="sileshn" revision="cm-13.0" />
+<project path="device/samsung/meliusltexx" name="android_device_samsung_meliusltexx" remote="sileshn" revision="bs" />
+<project path="device/samsung/melius3gxx" name="android_device_samsung_melius3gxx" remote="sileshn" revision="bs" />
 <project path="device/samsung/melius-common" name="android_device_samsung_melius-common" remote="sileshn" revision="cm-13.0" />
 <project path="vendor/samsung" name="proprietary_vendor_samsung" remote="sileshn" revision="cm-13.0" />
 <project name="android_kernel_samsung_msm8930-common" path="kernel/samsung/msm8930-common" remote="sileshn" revision="cm-13.0" />
