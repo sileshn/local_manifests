@@ -2,15 +2,11 @@
 <manifest>
 
 <remote name="sileshn" fetch="https://github.com/sileshn"/>
-<remote name="bitbucket" fetch="https://bitbucket.org/" />
 
 <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9-linaro" name="UBERTC/arm-eabi-4.9" remote="bitbucket" revision="master" />
-<project path="prebuilts/gcc/linux-x86/arm/arm-eabi-5.2-linaro" name="UBERTC/arm-eabi-5.2" remote="bitbucket" revision="master" />
 <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9-linaro" name="UBERTC/arm-linux-androideabi-4.9" remote="bitbucket" revision="master" />
-<project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-5.2-linaro" name="UBERTC/arm-linux-androideabi-5.2" remote="bitbucket" revision="master" />
 
 <project path="device/samsung/meliusltexx" name="android_device_samsung_meliusltexx" remote="sileshn" revision="temasek13" />
-<project path="device/samsung/melius3gxx" name="android_device_samsung_melius3gxx" remote="sileshn" revision="temasek13" />
 <project path="device/samsung/melius-common" name="android_device_samsung_melius-common" remote="sileshn" revision="cm-13.0" />
 <project path="vendor/samsung" name="proprietary_vendor_samsung" remote="sileshn" revision="cm-13.0" />
 <project name="android_kernel_samsung_msm8930-common" path="kernel/samsung/msm8930-common" remote="sileshn" revision="cm-13.0" />
@@ -26,7 +22,12 @@
 <project path="packages/apps/CMRemixOTA" name="android_packages_apps_CMRemixOTA" remote="sileshn" revision="cm-13.0" >
 	<copyfile src="ota_conf" dest="ota_conf" />
 </project>
-	
+
+<remove-project name="platform/external/guava" />
+<remove-project name="CyanogenMod/android_frameworks_support" />
+<project path="external/guava" name="BenzoRom/external_guava" remote="github" revision="marshmallow" />
+<project path="frameworks/support" name="BenzoRom/frameworks_support" remote="github" revision="marshmallow" />
+
 <remove-project name="CyanogenMod/android_device_common" />
 <remove-project name="CyanogenMod/android_device_generic_arm64" />
 <remove-project name="CyanogenMod/android_device_generic_armv7-a-neon" />
@@ -85,13 +86,13 @@
 <remove-project name="platform/hardware/intel/common/bd_prov" />
 <remove-project name="CyanogenMod/android_hardware_intel_common_libmix" />
 <remove-project name="platform/hardware/intel/common/libstagefrighthw" />
-<remove-project name="platform/hardware/intel/common/libva" />
+<remove-project name="CyanogenMod/android_hardware_intel_common_libva" />
 <remove-project name="CyanogenMod/android_hardware_intel_common_libwsbm" />
-<remove-project name="platform/hardware/intel/common/omx-components" />
+<remove-project name="CyanogenMod/android_hardware_intel_common_omx-components" />
 <remove-project name="platform/hardware/intel/common/utils" />
 <remove-project name="platform/hardware/intel/common/wrs_omxil_core" />
 <remove-project name="CyanogenMod/android_hardware_intel_img_hwcomposer" />
-<remove-project name="platform/hardware/intel/img/psb_headers" />
+<remove-project name="CyanogenMod/android_hardware_intel_img_psb_headers" />
 <remove-project name="CyanogenMod/android_hardware_intel_img_psb_video" />
 <remove-project name="platform/hardware/intel/sensors" />
 <remove-project name="platform/hardware/marvell/bt" />
