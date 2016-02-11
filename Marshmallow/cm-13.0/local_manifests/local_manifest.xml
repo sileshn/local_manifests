@@ -23,11 +23,6 @@
 	<copyfile src="ota_conf" dest="ota_conf" />
 </project>
 
-<remove-project name="platform/external/guava" />
-<remove-project name="CyanogenMod/android_frameworks_support" />
-<project path="external/guava" name="BenzoRom/external_guava" remote="github" revision="marshmallow" />
-<project path="frameworks/support" name="BenzoRom/frameworks_support" remote="github" revision="marshmallow" />
-
 <remove-project name="CyanogenMod/android_bootable_recovery" />
 <project path="bootable/recovery" name="mdmower/twrp" remote="github" revision="cm-13.0" />
 
