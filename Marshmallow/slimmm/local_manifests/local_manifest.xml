@@ -1,18 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 <remote name="sileshn" fetch="https://github.com/sileshn"/>
+<remote name="bitbucket" fetch="https://bitbucket.org/" />
+
+<project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9-linaro" name="UBERTC/arm-eabi-4.9" remote="bitbucket" revision="master" />
+<project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9-linaro" name="UBERTC/arm-linux-androideabi-4.9" remote="bitbucket" revision="master" />
+
 <project path="device/samsung/meliusltexx" name="android_device_samsung_meliusltexx" remote="sileshn" revision="slimmm" />
 <project path="device/samsung/melius-common" name="android_device_samsung_melius-common" remote="sileshn" revision="slimmm" />
 <project path="vendor/samsung" name="proprietary_vendor_samsung" remote="sileshn" revision="cm-13.0" />
-
-<project name="CyanogenMod/android_kernel_samsung_msm8930-common" path="kernel/samsung/msm8930-common" remote="github" revision="cm-13.0" />
-<project name="CyanogenMod/android_device_samsung_msm8930-common" path="device/samsung/msm8930-common" remote="github" revision="cm-13.0" />
+<project name="android_kernel_samsung_msm8930-common" path="kernel/samsung/msm8930-common" remote="sileshn" revision="cm-13.0" />
+<project name="android_device_samsung_msm8930-common" path="device/samsung/msm8930-common" remote="sileshn" revision="slim" />
 
 <project name="SlimRoms/device_samsung_qcom-common" path="device/samsung/qcom-common" remote="github" revision="mm6.0" />
 <project name="SlimRoms/hardware_samsung" path="hardware/samsung" remote="github" revision="mm6.0" />
+<project name="SlimRoms/android_external_stlport" path="external/stlport" remote="github" revision="mm6.0" />
 
-<project path="packages/apps/OTAUpdates" name="MatthewBooth/OTAUpdates" remote="github" revision="aosp" />
-<project name="CyanogenMod/android_hardware_sony_timekeep" path="hardware/sony/timekeep" remote="github" revision="cm-13.0" />
+<project path="packages/apps/CMRemixOTA" name="android_packages_apps_CMRemixOTA" remote="sileshn" revision="rr" >
+	<copyfile src="ota_conf" dest="ota_conf" />
+</project>
+
+<remove-project name="platform/frameworks/webview" />
+<project path="frameworks/webview" name="CyanogenMod/android_frameworks_webview" remote="github" revision="cm-13.0" />
+
+<remove-project name="platform/prebuilts/ndk" />
+<project path="prebuilts/ndk" name="platform/prebuilts/ndk" clone-depth="1" remote="aosp" />
+
+<remove-project name="SlimRoms/hardware_qcom_power" />
 
 <remove-project name="platform/developers/build" />
 <remove-project name="platform/developers/demos" />
@@ -43,15 +57,15 @@
 <remove-project name="platform/hardware/intel/audio_media" />
 <remove-project name="platform/hardware/intel/bootstub" />
 <remove-project name="platform/hardware/intel/common/bd_prov" />
-<remove-project name="SlimRoms/hardware_intel_common_libmix" />
-<remove-project name="SlimRoms/hardware_intel_common_libstagefrighthw" />
-<remove-project name="SlimRoms/hardware_intel_common_libva" />
+<remove-project name="platform/hardware/intel/common/libmix" />
+<remove-project name="platform/hardware/intel/common/libstagefrighthw" />
+<remove-project name="platform/hardware/intel/common/libva" />
 <remove-project name="platform/hardware/intel/common/libwsbm" />
-<remove-project name="SlimRoms/hardware_intel_common_omx-components" />
-<remove-project name="SlimRoms/hardware_intel_common_utils" />
-<remove-project name="SlimRoms/hardware_intel_common_wrs_omxil_core" />
-<remove-project name="SlimRoms/hardware_intel_img_hwcomposer" />
-<remove-project name="SlimRoms/hardware_intel_img_psb_video" />
+<remove-project name="platform/hardware/intel/common/omx-components" />
+<remove-project name="platform/hardware/intel/common/utils" />
+<remove-project name="platform/hardware/intel/common/wrs_omxil_core" />
+<remove-project name="platform/hardware/intel/img/hwcomposer" />
+<remove-project name="platform/hardware/intel/img/psb_video" />
 <remove-project name="platform/hardware/intel/sensors" />
 
 <remove-project name="platform/hardware/marvell/bt" />
