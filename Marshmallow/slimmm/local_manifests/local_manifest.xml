@@ -29,9 +29,13 @@
 <remove-project name="platform/external/doclava" />
 <remove-project name="platform/external/guava" />
 <remove-project name="platform/external/vogar" />
+<remove-project name="SlimRoms/frameworks_support" />
+<!--<remove-project name="SlimRoms/android_libcore" />-->
 <project path="external/doclava" name="CyanogenMod/android_external_doclava" remote="github" revision="cm-13.0" />
 <project path="external/guava" name="CyanogenMod/android_external_guava" remote="github" revision="cm-13.0" />
 <project path="external/vogar" name="CyanogenMod/android_external_vogar" remote="github" revision="cm-13.0" />
+<project path="frameworks/support" name="CyanogenMod/android_frameworks_support" remote="github" revision="cm-13.0" />
+<!--<project path="libcore" name="CyanogenMod/android_libcore" remote="github" revision="cm-13.0" />-->
 
 <remove-project name="SlimRoms/hardware_qcom_power" />
 
