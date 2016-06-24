@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-<remote name="sileshn" fetch="https://github.com/sileshn"/>
 <remote name="bitbucket" fetch="https://bitbucket.org/" />
 <remote name="sileshnp" fetch="ssh://git@bitbucket.org/sileshn" />
 <remote name="caf" fetch="git://codeaurora.org" review="codeaurora.org" />

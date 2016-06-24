@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-<remote name="sileshn" fetch="https://github.com/sileshn"/>
 <remote name="sileshnp" fetch="ssh://git@bitbucket.org/sileshn" />
 
 <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9-linaro" name="UBERTC/arm-eabi-4.9" remote="bucket" revision="master" />
