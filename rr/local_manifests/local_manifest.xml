@@ -9,9 +9,14 @@
 
 <project path="device/samsung/meliusltexx" name="android_device_samsung_meliusltexx" remote="sileshnp" revision="rr" />
 <project path="device/samsung/melius-common" name="android_device_samsung_melius-common" remote="sileshnp" revision="cm-13.0" />
-
 <project path="vendor/samsung" name="proprietary_vendor_samsung" remote="sileshnp" revision="cm-13.0" />
-<project name="android_kernel_samsung_msm8930-common" path="kernel/samsung/msm8930-common" remote="sileshnp" revision="cm-13.0" />
+<project path="kernel/samsung/msm8930-common" name="android_kernel_samsung_msm8930-common" remote="sileshnp" revision="cm-13.0" />
+<project path="kernel/samsung/msm8930-common-oc" name="android_kernel_samsung_msm8930-common-oc" remote="sileshnp" revision="cm-13.0" />
+
+<project path="device/motorola/athene" name="ashwinr64/android_device_motorola_athene" remote="github" revision="cm-13.0" />
+<project path="device/motorola/msm8952-common" name="ashwinr64/android_device_motorola_msm8952-common" remote="github" revision="cm-13.0" />
+<project path="vendor/motorola" name="ashwinr64/proprietary_vendor_motorola_msm8952" remote="github" revision="cm-13.0" />
+<project path="kernel/motorola/msm8952" name="ashwinr64/android_kernel_motorola_msm8952" remote="github" revision="cm-13.0" />
 
 <project name="CyanogenMod/android_device_samsung_msm8930-common" path="device/samsung/msm8930-common" remote="github" revision="cm-13.0" />
 <project name="CyanogenMod/android_device_qcom_common" path="device/qcom/common" remote="github" revision="cm-13.0" />
@@ -19,6 +24,8 @@
 <project name="CyanogenMod/android_hardware_samsung" path="hardware/samsung" remote="github" revision="cm-13.0" />
 <project name="CyanogenMod/android_packages_apps_SamsungServiceMode" path="packages/apps/SamsungServiceMode" remote="github" revision="cm-13.0" />
 <project name="CyanogenMod/android_external_stlport" path="external/stlport" remote="github" revision="cm-13.0" />
+
+
 
 <remove-project name="packages_apps_ResurrectionOTA" />
 <project path="packages/apps/SlimOTA" name="packages_apps_SlimOTA" remote="sileshnp" revision="rr" >
