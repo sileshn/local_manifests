@@ -18,7 +18,46 @@
 <project name="SlimRoms/hardware_samsung" path="hardware/samsung" remote="github" revision="mm6.0" />
 <project name="SlimRoms/android_external_stlport" path="external/stlport" remote="github" revision="mm6.0" />
 
-<project path="packages/apps/SlimOTA" name="packages_apps_SlimOTA" remote="sileshnp" revision="cm-13.0" >
+<!-- CM Repos -->
+
+<project path="frameworks/av" name="CyanogenMod/android_frameworks_av" remote="github" revision="cm-13.0" />
+<project path="hardware/libhardware" name="CyanogenMod/android_hardware_libhardware" remote="github" revision="cm-13.0" />
+<project path="hardware/libhardware_legacy" name="CyanogenMod/android_hardware_libhardware_legacy" remote="github" revision="cm-13.0" />
+<project path="hardware/qcom/audio/default" name="CyanogenMod/android_hardware_qcom_audio" remote="github" revision="cm-13.0" />
+<project path="hardware/qcom/audio-caf/apq8084" name="CyanogenMod/android_hardware_qcom_audio" remote="github" revision="cm-13.0-caf-8084" />
+<project path="hardware/qcom/audio-caf/msm8916" name="CyanogenMod/android_hardware_qcom_audio" remote="github" revision="cm-13.0-caf-8916" />
+<project path="hardware/qcom/audio-caf/msm8937" name="CyanogenMod/android_hardware_qcom_audio" remote="github" revision="cm-13.0-caf-8937" />
+<project path="hardware/qcom/audio-caf/msm8952" name="CyanogenMod/android_hardware_qcom_audio" remote="github" revision="cm-13.0-caf-8952" />
+<project path="hardware/qcom/audio-caf/msm8960" name="CyanogenMod/android_hardware_qcom_audio" remote="github" revision="cm-13.0-caf-8960" />
+<project path="hardware/qcom/audio-caf/msm8974" name="CyanogenMod/android_hardware_qcom_audio" remote="github" revision="cm-13.0-caf-8974" />
+<project path="hardware/qcom/audio-caf/msm8994" name="CyanogenMod/android_hardware_qcom_audio" remote="github" revision="cm-13.0-caf-8994" />
+<project path="hardware/qcom/audio-caf/msm8996" name="CyanogenMod/android_hardware_qcom_audio" remote="github" revision="cm-13.0-caf-8996" />
+<project path="hardware/qcom/display" name="CyanogenMod/android_hardware_qcom_display" remote="github" revision="cm-13.0" />
+<project path="hardware/qcom/display-caf/apq8084" name="CyanogenMod/android_hardware_qcom_display" remote="github" revision="cm-13.0-caf-8084" />
+<project path="hardware/qcom/display-caf/msm8916" name="CyanogenMod/android_hardware_qcom_display" remote="github" revision="cm-13.0-caf-8916" />
+<project path="hardware/qcom/display-caf/msm8937" name="CyanogenMod/android_hardware_qcom_display" remote="github" revision="cm-13.0-caf-8937" />
+<project path="hardware/qcom/display-caf/msm8952" name="CyanogenMod/android_hardware_qcom_display" remote="github" revision="cm-13.0-caf-8952" />
+<project path="hardware/qcom/display-caf/msm8960" name="CyanogenMod/android_hardware_qcom_display" remote="github" revision="cm-13.0-caf-8960" />
+<project path="hardware/qcom/display-caf/msm8974" name="CyanogenMod/android_hardware_qcom_display" remote="github" revision="cm-13.0-caf-8974" />
+<project path="hardware/qcom/display-caf/msm8994" name="CyanogenMod/android_hardware_qcom_display" remote="github" revision="cm-13.0-caf-8994" />
+<project path="hardware/qcom/display-caf/msm8996" name="CyanogenMod/android_hardware_qcom_display" remote="github" revision="cm-13.0-caf-8996" />
+<project path="hardware/qcom/media/default" name="CyanogenMod/android_hardware_qcom_media" remote="github" revision="cm-13.0" />
+<project path="hardware/qcom/media-caf/apq8084" name="CyanogenMod/android_hardware_qcom_media" remote="github" revision="cm-13.0-caf-8084" />
+<project path="hardware/qcom/media-caf/msm8916" name="CyanogenMod/android_hardware_qcom_media" remote="github" revision="cm-13.0-caf-8916" />
+<project path="hardware/qcom/media-caf/msm8937" name="CyanogenMod/android_hardware_qcom_media" remote="github" revision="cm-13.0-caf-8937" />
+<project path="hardware/qcom/media-caf/msm8952" name="CyanogenMod/android_hardware_qcom_media" remote="github" revision="cm-13.0-caf-8952" />
+<project path="hardware/qcom/media-caf/msm8960" name="CyanogenMod/android_hardware_qcom_media" remote="github" revision="cm-13.0-caf-8960" />
+<project path="hardware/qcom/media-caf/msm8974" name="CyanogenMod/android_hardware_qcom_media" remote="github" revision="cm-13.0-caf-8974" />
+<project path="hardware/qcom/media-caf/msm8994" name="CyanogenMod/android_hardware_qcom_media" remote="github" revision="cm-13.0-caf-8994" />
+<project path="hardware/qcom/media-caf/msm8996" name="CyanogenMod/android_hardware_qcom_media" remote="github" revision="cm-13.0-caf-8996" />
+<project path="external/doclava" name="CyanogenMod/android_external_doclava" remote="github" revision="cm-13.0" />
+<project path="external/guava" name="CyanogenMod/android_external_guava" remote="github" revision="cm-13.0" />
+<project path="external/vogar" name="CyanogenMod/android_external_vogar" remote="github" revision="cm-13.0" />
+<project path="system/keymaster" name="CyanogenMod/android_system_keymaster" remote="github" revision="cm-13.0" />
+<project path="system/security" name="CyanogenMod/android_system_security" remote="github" revision="cm-13.0" />
+<project path="frameworks/support" name="CyanogenMod/android_frameworks_support" remote="github" revision="cm-13.0" />
+
+<project path="packages/apps/SlimOTA" name="packages_apps_SlimOTA" remote="sileshnp" revision="rr" >
 	<copyfile src="ota_conf" dest="ota_conf" />
 </project>
 
@@ -102,8 +141,8 @@
 <remove-project name="platform/prebuilts/gcc/darwin-x86/mips/mips64el-linux-android-4.9" />
 <remove-project name="platform/prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9" />
 <remove-project name="platform/prebuilts/python/darwin-x86/2.7.5" />
+<remove-project name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" />
 
 <remove-project name="SlimRoms/android_prebuilt" />
 
 </manifest>
-
