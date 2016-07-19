@@ -19,9 +19,9 @@
 <project path="vendor/motorola" name="ashwinr64/proprietary_vendor_motorola_msm8952" remote="github" revision="cm-13.0" />
 <project path="kernel/motorola/msm8952" name="ashwinr64/android_kernel_motorola_msm8952" remote="github" revision="cm-13.0" />
 
-<project name="device_samsung_qcom-common" path="device/samsung/qcom-common" remote="SlimRoms" revision="mm6.0" />
-<project name="hardware_samsung" path="hardware/samsung" remote="SlimRoms" revision="mm6.0" />
-<project name="android_external_stlport" path="external/stlport" remote="SlimRoms" revision="mm6.0" />
+<project name="SlimRoms/device_samsung_qcom-common" path="device/samsung/qcom-common" remote="github" revision="mm6.0" />
+<project name="SlimRoms/hardware_samsung" path="hardware/samsung" remote="github" revision="mm6.0" />
+<project name="SlimRoms/android_external_stlport" path="external/stlport" remote="github" revision="mm6.0" />
 
 <project path="packages/apps/SlimOTA" name="packages_apps_SlimOTA" remote="sileshnp" revision="rr" >
 	<copyfile src="ota_conf" dest="ota_conf" />
@@ -30,7 +30,7 @@
 <remove-project name="platform/external/chromium-webview" />
 <project path="external/chromium-webview" name="CyanogenMod/android_external_chromium-webview" remote="github" revision="cm-13.0" clone-depth="1" />
 
-<remove-project name="hardware_qcom_power" />
+<remove-project name="SlimRoms/hardware_qcom_power" />
 
 <remove-project name="platform/developers/build" />
 <remove-project name="platform/developers/demos" />
@@ -76,17 +76,17 @@
 <remove-project name="platform/hardware/mediatek" />
 <remove-project name="platform/hardware/nvidia/audio" />
 
-<remove-project name="hardware_samsung_slsi_exynos5" />
-<remove-project name="hardware_ti_omap3" />
-<remove-project name="hardware_ti_omap4" />
-<remove-project name="hardware_ti_omap4xxx" />
-<remove-project name="hardware_ti_wlan" />
-<remove-project name="hardware_ti_wpan" />
+<remove-project name="SlimRoms/hardware_samsung_slsi_exynos5" />
+<remove-project name="SlimRoms/hardware_ti_omap3" />
+<remove-project name="SlimRoms/hardware_ti_omap4" />
+<remove-project name="SlimRoms/hardware_ti_omap4xxx" />
+<remove-project name="SlimRoms/hardware_ti_wlan" />
+<remove-project name="SlimRoms/hardware_ti_wpan" />
 
 <remove-project name="platform/packages/apps/Camera" />
 <remove-project name="platform/packages/apps/Gallery" />
 <remove-project name="platform/packages/apps/LegacyCamera" />
-<remove-project name="packages_apps_Camera2" />
+<remove-project name="SlimRoms/packages_apps_Camera2" />
 
 <remove-project name="platform/packages/screensavers/Basic" />
 <remove-project name="platform/packages/screensavers/PhotoTable" />
@@ -109,7 +109,7 @@
 <remove-project name="platform/prebuilts/python/darwin-x86/2.7.5" />
 <remove-project name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" />
 
-<remove-project name="android_prebuilt" />
+<remove-project name="SlimRoms/android_prebuilt" />
 
 </manifest>
 
