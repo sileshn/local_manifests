@@ -7,56 +7,14 @@
 <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9-linaro" name="UBERTC/arm-eabi-4.9" remote="bitbucket" revision="master" />
 <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9-linaro" name="UBERTC/arm-linux-androideabi-4.9" remote="bitbucket" revision="master" />
 
-<project path="device/samsung/meliusltexx" name="android_device_samsung_meliusltexx" remote="sileshnp" revision="slimmm" />
-<project path="device/samsung/melius-common" name="android_device_samsung_melius-common" remote="sileshnp" revision="slimmm" />
-<project path="vendor/samsung" name="proprietary_vendor_samsung" remote="sileshnp" revision="cm-13.0" />
-<project name="android_kernel_samsung_msm8930-common" path="kernel/samsung/msm8930-common" remote="sileshnp" revision="cm-13.0" />
-<project path="kernel/samsung/msm8930-common-oc" name="android_kernel_samsung_msm8930-common-oc" remote="sileshnp" revision="cm-13.0" />
-<project name="android_device_samsung_msm8930-common" path="device/samsung/msm8930-common" remote="sileshnp" revision="slim" />
-
-<project path="device/motorola/athene" name="ashwinr64/android_device_motorola_athene" remote="github" revision="cm-13.0" />
-<project path="device/motorola/msm8952-common" name="ashwinr64/android_device_motorola_msm8952-common" remote="github" revision="cm-13.0" />
-<project path="vendor/motorola" name="ashwinr64/proprietary_vendor_motorola_msm8952" remote="github" revision="cm-13.0" />
-<project path="kernel/motorola/msm8952" name="ashwinr64/android_kernel_motorola_msm8952" remote="github" revision="cm-13.0" />
-
-<project name="SlimRoms/device_samsung_qcom-common" path="device/samsung/qcom-common" remote="github" revision="mm6.0" />
-<project name="SlimRoms/hardware_samsung" path="hardware/samsung" remote="github" revision="mm6.0" />
 <project name="SlimRoms/android_external_stlport" path="external/stlport" remote="github" revision="mm6.0" />
-
-<project path="packages/apps/SlimOTA" name="packages_apps_SlimOTA" remote="sileshnp" revision="rr" >
-	<copyfile src="ota_conf" dest="ota_conf" />
-</project>
 
 <remove-project name="platform/external/chromium-webview" />
 <project path="external/chromium-webview" name="CyanogenMod/android_external_chromium-webview" remote="github" revision="cm-13.0" clone-depth="1" />
 
-<remove-project name="SlimRoms/hardware_qcom_power" />
-
-<remove-project name="platform/developers/build" />
-<remove-project name="platform/developers/demos" />
-<remove-project name="platform/developers/docs" />
-<remove-project name="platform/developers/samples/android" />
-
-<remove-project name="device/common" />
-<remove-project name="device/generic/arm64" />
-<remove-project name="device/generic/armv7-a-neon" />
-<remove-project name="device/generic/common" />
-<remove-project name="device/generic/goldfish" />
-<remove-project name="device/generic/mips" />
-<remove-project name="device/generic/mini-emulator-arm64" />
-<remove-project name="device/generic/mini-emulator-armv7-a-neon" />
-<remove-project name="device/generic/mini-emulator-mips" />
-<remove-project name="device/generic/mini-emulator-x86" />
-<remove-project name="device/generic/mini-emulator-x86_64" />
-<remove-project name="device/generic/qemu" />
-<remove-project name="device/generic/x86" />
-<remove-project name="device/generic/x86_64" />
-<remove-project name="device/google/accessory/arduino" />
-<remove-project name="device/google/accessory/demokit" />
-<remove-project name="device/google/atv" />
-<remove-project name="platform/docs/source.android.com" />
-<remove-project name="device/sample" />
-
+<project path="packages/apps/SlimOTA" name="packages_apps_SlimOTA" remote="sileshnp" revision="rr" >
+	<copyfile src="ota_conf" dest="ota_conf" />
+</project>
 
 <remove-project name="platform/hardware/intel/audio_media" />
 <remove-project name="platform/hardware/intel/bootstub" />
@@ -82,11 +40,6 @@
 <remove-project name="SlimRoms/hardware_ti_omap4xxx" />
 <remove-project name="SlimRoms/hardware_ti_wlan" />
 <remove-project name="SlimRoms/hardware_ti_wpan" />
-
-<remove-project name="platform/packages/apps/Camera" />
-<remove-project name="platform/packages/apps/Gallery" />
-<remove-project name="platform/packages/apps/LegacyCamera" />
-<remove-project name="SlimRoms/packages_apps_Camera2" />
 
 <remove-project name="platform/packages/screensavers/Basic" />
 <remove-project name="platform/packages/screensavers/PhotoTable" />

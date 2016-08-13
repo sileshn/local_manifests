@@ -3,19 +3,14 @@
 
 <remote name="sileshnp" fetch="ssh://git@bitbucket.org/sileshn" />
 
-<project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9-linaro" name="UBERTC/arm-eabi-4.9" remote="bucket" revision="master" />
-<project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9-linaro" name="UBERTC/arm-linux-androideabi-4.9" remote="bucket" revision="master" />
+<project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9-uber" name="UBERTC/arm-eabi-4.9" remote="bucket" revision="master" />
+<project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9-uber" name="UBERTC/arm-linux-androideabi-4.9" remote="bucket" revision="master" />
 
 <project path="device/samsung/meliusltexx" name="android_device_samsung_meliusltexx" remote="sileshnp" revision="rr" />
 <project path="device/samsung/melius-common" name="android_device_samsung_melius-common" remote="sileshnp" revision="cm-13.0" />
 <project path="vendor/samsung" name="proprietary_vendor_samsung" remote="sileshnp" revision="cm-13.0" />
 <project path="kernel/samsung/msm8930-common" name="android_kernel_samsung_msm8930-common" remote="sileshnp" revision="cm-13.0" />
 <project path="kernel/samsung/msm8930-common-oc" name="android_kernel_samsung_msm8930-common-oc" remote="sileshnp" revision="cm-13.0" />
-
-<project path="device/motorola/athene" name="ashwinr64/android_device_motorola_athene" remote="github" revision="cm-13.0" />
-<project path="device/motorola/msm8952-common" name="ashwinr64/android_device_motorola_msm8952-common" remote="github" revision="cm-13.0" />
-<project path="vendor/motorola" name="ashwinr64/proprietary_vendor_motorola_msm8952" remote="github" revision="cm-13.0" />
-<project path="kernel/motorola/msm8952" name="ashwinr64/android_kernel_motorola_msm8952" remote="github" revision="cm-13.0" />
 
 <project name="CyanogenMod/android_device_samsung_msm8930-common" path="device/samsung/msm8930-common" remote="github" revision="cm-13.0" />
 <project name="CyanogenMod/android_device_qcom_common" path="device/qcom/common" remote="github" revision="cm-13.0" />
@@ -24,18 +19,15 @@
 <project name="CyanogenMod/android_packages_apps_SamsungServiceMode" path="packages/apps/SamsungServiceMode" remote="github" revision="cm-13.0" />
 <project name="CyanogenMod/android_external_stlport" path="external/stlport" remote="github" revision="cm-13.0" />
 
+<project path="device/motorola/athene" name="android_device_motorola_athene" remote="sileshnp" revision="aokp" />
+<project path="vendor/motorola" name="proprietary_vendor_motorola_msm8952" remote="sileshnp" revision="cm-13.0" />
+<project path="kernel/motorola/msm8952" name="ashwinr64/android_kernel_motorola_msm8952" remote="github" revision="cm-13.0" />
+<project path="external/bson" name="CyanogenMod/android_external_bson" remote="github" revision="cm-13.0" />
+
 <remove-project name="packages_apps_ResurrectionOTA" />
 <project path="packages/apps/SlimOTA" name="packages_apps_SlimOTA" remote="sileshnp" revision="rr" >
 	<copyfile src="ota_conf" dest="ota_conf" />
 </project>
-
-<remove-project name="CyanogenMod/android_device_common" />
-<remove-project name="CyanogenMod/android_device_generic_arm64" />
-<remove-project name="CyanogenMod/android_device_generic_armv7-a-neon" />
-<remove-project name="CyanogenMod/android_device_generic_common" />
-<remove-project name="CyanogenMod/android_device_generic_goldfish" />
-<remove-project name="CyanogenMod/android_device_generic_mips" />
-<remove-project name="CyanogenMod/android_device_google_atv" />
 
 <remove-project name="CyanogenMod/android_hardware_samsung_slsi_exynos5" />
 <remove-project name="CyanogenMod/android_hardware_ti_omap4" />
@@ -53,21 +45,6 @@
 <remove-project name="CyanogenMod/android_packages_wallpapers_NoiseField" />
 <remove-project name="CyanogenMod/android_packages_wallpapers_PhaseBeam" />
 <remove-project name="CyanogenMod/android_packages_wallpapers_PhotoPhase" />
-
-<remove-project name="platform/developers/build" />
-<remove-project name="platform/developers/samples/android" />
-<remove-project name="device/generic/mini-emulator-arm64" />
-<remove-project name="device/generic/mini-emulator-armv7-a-neon" />
-<remove-project name="device/generic/mini-emulator-mips" />
-<remove-project name="device/generic/mini-emulator-x86" />
-<remove-project name="device/generic/mini-emulator-x86_64" />
-<remove-project name="device/generic/qemu" />
-<remove-project name="device/generic/x86" />
-<remove-project name="device/generic/x86_64" />
-<remove-project name="device/google/accessory/arduino" />
-<remove-project name="device/google/accessory/demokit" />
-<remove-project name="device/sample" />
-<remove-project name="platform/docs/source.android.com" />
 
 <remove-project name="platform/hardware/intel/audio_media" />
 <remove-project name="platform/hardware/intel/bootstub" />
@@ -97,7 +74,5 @@
 <remove-project name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" />
 <remove-project name="platform/prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" />
 <remove-project name="platform/prebuilts/python/darwin-x86/2.7.5" />
-
-<remove-project name="CyanogenMod/android_packages_apps_Camera2" />
 
 </manifest>
