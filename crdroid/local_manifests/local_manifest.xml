@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+<remote name="bitbucket" fetch="https://bitbucket.org/" />
+<remote name="sileshnp" fetch="ssh://git@bitbucket.org/sileshn" />
+<remote name="sileshn" fetch="https://bitbucket.org/sileshn" />
+
+<remove-project name="crdroidandroid/android_packages_apps_SetupWizard" />
+<remove-project name="CyanogenMod/android_packages_apps_CMFileManager" />
+<remove-project name="CyanogenMod/android_packages_apps_Camera2" />
+
+<project path="packages/apps/SlimOTA" name="packages_apps_SlimOTA" remote="sileshnp" revision="cm-14.0" >
+	<copyfile src="ota_conf" dest="ota_conf" />
+</project>
+
+<project path="device/motorola/athene" name="android_device_motorola_athene" remote="sileshnp" revision="cm-14.1" />
+<project path="vendor/motorola/athene" name="proprietary_vendor_motorola_athene" remote="sileshnp" revision="cm-14.1" />
+<project path="kernel/motorola/athene" name="android_kernel_motorola_athene" remote="sileshnp" revision="cm-14.1" />
+
+<project name="CyanogenMod/android_device_qcom_common" path="device/qcom/common" remote="github" revision="cm-14.1" />
+<project name="CyanogenMod/android_external_stlport" path="external/stlport" remote="github" revision="cm-14.1" />
+<project path="external/bson" name="CyanogenMod/android_external_bson" remote="github" revision="cm-13.0" />
+
+</manifest>
