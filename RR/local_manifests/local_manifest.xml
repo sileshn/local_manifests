@@ -3,13 +3,6 @@
 
 <remote name="sileshnp" fetch="ssh://git@bitbucket.org/sileshn" />
 <remote name="sileshn" fetch="https://github.com/sileshn" />
-<remote name="ubertc" fetch="https://bitbucket.org/UBERTC" />
-
-<!-- UberTC -->
-<remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" />
-<remove-project name="LineageOS/android_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9" />
-<project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" name="arm-eabi-4.8" remote="ubertc" revision="master" />
-<project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="arm-linux-androideabi-4.9" remote="ubertc" revision="master" />
 
 <!-- Remove CMTE -->
 <remove-project name="LineageOS/android_packages_apps_ThemeChooser" />
