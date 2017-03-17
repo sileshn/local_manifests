@@ -4,7 +4,6 @@
 <remote name="sileshnp" fetch="ssh://git@bitbucket.org/sileshn" />
 <remote name="sileshn" fetch="https://github.com/sileshn" />
 <remote name="ubertc" fetch="https://bitbucket.org/UBERTC" />
-<remote  name="caf" fetch="git://codeaurora.org/quic/la" review="codeaurora.org" />
 
 <!-- UberTC -->
 <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" />
@@ -12,9 +11,25 @@
 <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" name="arm-eabi-4.8" remote="ubertc" revision="master" />
 <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="arm-linux-androideabi-4.9" remote="sileshnp" revision="master" />
 
+<!-- Junk -->
+<remove-project name="LineageOS/android_packages_screensavers_Basic" />
+<remove-project name="LineageOS/android_packages_screensavers_PhotoTable" />
+<remove-project name="LineageOS/android_packages_screensavers_WebView" />
+
 <!-- TWRP-->
 <project path="external/busybox" name="LineageOS/android_external_busybox" remote="github" revision="cm-14.1" />
 <project path="bootable/recovery-twrp" name="omnirom/android_bootable_recovery" remote="github" revision="android-7.1" />
+
+<!-- PackageInstaller-->
+<remove-project name="LineageOS/android_packages_apps_PackageInstaller" />
+<project path="packages/apps/PackageInstaller" name="Flash-ROM/packages_apps_PackageInstaller" remote="github" revision="n7.1.1" />
+
+<!-- OmniJaws-->
+<project path="packages/services/OmniJaws" name="omnirom/android_packages_services_OmniJaws" revision="android-7.1" />
+
+<!-- SlimLauncher-->
+<remove-project name="LineageOS/android_packages_apps_Trebuchet" />
+<project path="packages/apps/SlimLauncher" name="SlimRoms/packages_apps_SlimLauncher" remote="github" revision="ng7.1" />
 
 <!-- Remove CMTE -->
 <remove-project name="LineageOS/android_packages_apps_ThemeChooser" />
@@ -23,17 +38,14 @@
 <remove-project name="LineageOS/android_packages_themes_HexoLibre" />
 
 <remove-project name="LineageOS/android_packages_apps_SetupWizard" />
-<remove-project name="LineageOS/android_packages_apps_CMFileManager" />
-<remove-project name="LineageOS/android_packages_apps_Camera2" />
 <remove-project name="LineageOS/android_packages_apps_CMUpdater" />
+<remove-project name="LineageOS/android_packages_apps_Camera2" />
 
-<!-- Misc -->
-<remove-project name="LineageOS/android_packages_apps_Gallery2" />
-<remove-project name="LineageOS/android_packages_apps_Eleven" />
-<project name="platform/packages/apps/SnapdragonGallery" path="packages/apps/SnapdragonGallery" remote="caf" revision="android_ui.lnx.2.1.r5-rel"/>
-<project name="platform/packages/apps/SnapdragonMusic" path="packages/apps/SnapdragonMusic" remote="caf" revision="android_ui.lnx.2.1.r5-rel"/>
+<!-- ThemeInterfacer -->
+<project path="packages/apps/ThemeInterfacer" name="substratum/interfacer" remote="github" revision="n-rootless" />
 
 <!-- OMS -->
+<remove-project name="LineageOS/android_bionic" />
 <remove-project name="LineageOS/android_build" />
 <remove-project name="LineageOS/android_frameworks_base" />
 <remove-project name="LineageOS/android_frameworks_native" />
@@ -50,6 +62,7 @@
 <remove-project name="LineageOS/android_vendor_cm" />
 <remove-project name="LineageOS/cm_platform_sdk" />
 
+<project path="bionic" name="android_bionic" remote="sileshn" revision="test" />
 <project path="build" name="android_build" remote="sileshn" revision="test">
     <copyfile src="core/root.mk" dest="Makefile" />
 </project>
@@ -70,13 +83,9 @@
 
 <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" remote="github" revision="cm-14.1" />
 
-<project path="packages/apps/SlimOTA" name="packages_apps_SlimOTA" remote="sileshnp" revision="cm-14.1" >
-	<copyfile src="ota_conf" dest="ota_conf" />
-</project>
-
 <project path="device/motorola/athene" name="android_device_motorola_athene" remote="sileshnp" revision="cm-14.1-oms" />
 <project path="vendor/motorola" name="proprietary_vendor_motorola_athene" remote="sileshnp" revision="cm-14.1" />
-<project path="kernel/motorola/athene" name="android_kernel_motorola_athene" remote="sileshnp" revision="cm-14.1" />
+<project path="kernel/motorola/athene" name="android_kernel_motorola_athene" remote="sileshnp" revision="cm-14.1-old" />
 
 <project path="device/samsung/meliusltexx" name="android_device_samsung_meliusltexx" remote="sileshnp" revision="cm-14.1-oms" />
 <project path="device/samsung/melius-common" name="android_device_samsung_melius-common" remote="sileshnp" revision="cm-14.1-oms" />
@@ -90,6 +99,8 @@
 <project path="external/bson" name="LineageOS/android_external_bson" remote="github" revision="cm-14.1" />
 <project path="external/stlport" name="LineageOS/android_external_stlport" remote="github" revision="cm-14.1" />
 
-<project path="packages/apps/masquerade" name="TeamSubstratum/masquerade" remote="github" revision="n" />
+<project path="packages/apps/SlimOTA" name="packages_apps_SlimOTA" remote="sileshnp" revision="cm-14.1" >
+	<copyfile src="ota_conf" dest="ota_conf" />
+</project>
 
 </manifest>
