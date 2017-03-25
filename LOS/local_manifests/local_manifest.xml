@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-<remote name="sileshnp" fetch="ssh://git@bitbucket.org/sileshn" />
-<remote name="sileshn" fetch="https://github.com/sileshn" />
+<remote name="gitlab" fetch="ssh://git@gitlab.com/sileshn" />
 <remote name="ubertc" fetch="https://bitbucket.org/UBERTC" />
 
 <!-- UberTC -->
@@ -15,6 +14,9 @@
 <remove-project name="LineageOS/android_packages_screensavers_Basic" />
 <remove-project name="LineageOS/android_packages_screensavers_PhotoTable" />
 <remove-project name="LineageOS/android_packages_screensavers_WebView" />
+
+<!-- OpenWeatherMapProvider -->
+<project path="packages/apps/OpenWeatherMapProvider" name="LineageOS/android_packages_apps_OpenWeatherMapProvider" remote="github" revision="cm-14.1" />
 
 <!-- TWRP-->
 <project path="external/busybox" name="LineageOS/android_external_busybox" remote="github" revision="cm-14.1" />
@@ -62,35 +64,35 @@
 <remove-project name="LineageOS/android_vendor_cm" />
 <remove-project name="LineageOS/cm_platform_sdk" />
 
-<project path="bionic" name="android_bionic" remote="sileshn" revision="test" />
-<project path="build" name="android_build" remote="sileshn" revision="test">
+<project path="bionic" name="android_bionic" remote="gitlab" revision="cm-14.1" />
+<project path="build" name="android_build" remote="gitlab" revision="cm-14.1">
     <copyfile src="core/root.mk" dest="Makefile" />
 </project>
-<project path="frameworks/base" name="android_frameworks_base" remote="sileshn" revision="test" />
-<project path="frameworks/native" name="android_frameworks_native" remote="sileshn" revision="test" />
-<project path="packages/apps/Bluetooth" name="android_packages_apps_Bluetooth" remote="sileshn" revision="test" />
-<project path="packages/apps/CMParts" name="android_packages_apps_CMParts" remote="sileshn" revision="test" />
-<project path="packages/apps/Contacts" name="android_packages_apps_Contacts" remote="sileshn" revision="test" />
-<project path="packages/apps/ContactsCommon" name="android_packages_apps_ContactsCommon" remote="sileshn" revision="test" />
-<project path="packages/apps/Dialer" name="android_packages_apps_Dialer" remote="sileshn" revision="test" />
-<project path="packages/apps/ExactCalculator" name="android_packages_apps_ExactCalculator" remote="sileshn" revision="test" />
-<project path="packages/apps/PhoneCommon" name="android_packages_apps_PhoneCommon" remote="sileshn" revision="test" />
-<project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="sileshn" revision="test" />
-<project path="system/core" name="android_system_core" remote="sileshn" revision="test" />
-<project path="system/sepolicy" name="android_system_sepolicy" remote="sileshn" revision="test" />
-<project path="vendor/cm" name="android_vendor_cm" remote="sileshn" revision="test" />
-<project path="vendor/cmsdk" name="cm_platform_sdk" remote="sileshn" revision="test" />
+<project path="frameworks/base" name="android_frameworks_base" remote="gitlab" revision="cm-14.1" />
+<project path="frameworks/native" name="android_frameworks_native" remote="gitlab" revision="cm-14.1" />
+<project path="packages/apps/Bluetooth" name="android_packages_apps_Bluetooth" remote="gitlab" revision="cm-14.1" />
+<project path="packages/apps/CMParts" name="android_packages_apps_CMParts" remote="gitlab" revision="cm-14.1" />
+<project path="packages/apps/Contacts" name="android_packages_apps_Contacts" remote="gitlab" revision="cm-14.1" />
+<project path="packages/apps/ContactsCommon" name="android_packages_apps_ContactsCommon" remote="gitlab" revision="cm-14.1" />
+<project path="packages/apps/Dialer" name="android_packages_apps_Dialer" remote="gitlab" revision="cm-14.1" />
+<project path="packages/apps/ExactCalculator" name="android_packages_apps_ExactCalculator" remote="gitlab" revision="cm-14.1" />
+<project path="packages/apps/PhoneCommon" name="android_packages_apps_PhoneCommon" remote="gitlab" revision="cm-14.1" />
+<project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="gitlab" revision="cm-14.1" />
+<project path="system/core" name="android_system_core" remote="gitlab" revision="cm-14.1" />
+<project path="system/sepolicy" name="android_system_sepolicy" remote="gitlab" revision="cm-14.1" />
+<project path="vendor/cm" name="android_vendor_cm" remote="gitlab" revision="cm-14.1" />
+<project path="vendor/cmsdk" name="cm_platform_sdk" remote="gitlab" revision="cm-14.1" />
 
 <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" remote="github" revision="cm-14.1" />
 
-<project path="device/motorola/athene" name="android_device_motorola_athene" remote="sileshnp" revision="cm-14.1-oms" />
-<project path="vendor/motorola" name="proprietary_vendor_motorola_athene" remote="sileshnp" revision="cm-14.1" />
-<project path="kernel/motorola/athene" name="android_kernel_motorola_athene" remote="sileshnp" revision="cm-14.1-old" />
+<project path="device/motorola/athene" name="android_device_motorola_athene" remote="gitlab" revision="cm-14.1" />
+<project path="vendor/motorola" name="proprietary_vendor_motorola_athene" remote="gitlab" revision="cm-14.1" />
+<project path="kernel/motorola/athene" name="android_kernel_motorola_athene" remote="gitlab" revision="cm-14.1" />
 
-<project path="device/samsung/meliusltexx" name="android_device_samsung_meliusltexx" remote="sileshnp" revision="cm-14.1-oms" />
-<project path="device/samsung/melius-common" name="android_device_samsung_melius-common" remote="sileshnp" revision="cm-14.1-oms" />
-<project path="vendor/samsung" name="proprietary_vendor_samsung" remote="sileshnp" revision="cm-14.1" />
-<project path="kernel/samsung/msm8930-common" name="android_kernel_samsung_msm8930-common" remote="sileshnp" revision="cm-14.1" />
+<project path="device/samsung/meliusltexx" name="android_device_samsung_meliusltexx" remote="gitlab" revision="cm-14.1" />
+<project path="device/samsung/melius-common" name="android_device_samsung_melius-common" remote="gitlab" revision="cm-14.1" />
+<project path="vendor/samsung" name="proprietary_vendor_samsung" remote="gitlab" revision="cm-14.1" />
+<project path="kernel/samsung/msm8930-common" name="android_kernel_samsung_msm8930-common" remote="gitlab" revision="cm-14.1" />
 
 <project path="device/samsung/msm8930-common" name="LineageOS/android_device_samsung_msm8930-common" remote="github" revision="cm-14.1" />
 <project path="device/qcom/common" name="LineageOS/android_device_qcom_common" remote="github" revision="cm-14.1" />
@@ -99,7 +101,7 @@
 <project path="external/bson" name="LineageOS/android_external_bson" remote="github" revision="cm-14.1" />
 <project path="external/stlport" name="LineageOS/android_external_stlport" remote="github" revision="cm-14.1" />
 
-<project path="packages/apps/SlimOTA" name="packages_apps_SlimOTA" remote="sileshnp" revision="cm-14.1" >
+<project path="packages/apps/SlimOTA" name="packages_apps_SlimOTA" remote="gitlab" revision="cm-14.1" >
 	<copyfile src="ota_conf" dest="ota_conf" />
 </project>
 
