@@ -4,11 +4,16 @@
 <remote name="gitlab" fetch="ssh://git@gitlab.com/sileshn" />
 <remote name="sileshnp" fetch="ssh://git@bitbucket.org/sileshn" />
 
+<!-- Toolchains -->
+<remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" />
+<remove-project name="LineageOS/android_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9" />
+<project path="prebuilts/gcc/linux-x86/arm" name="toolchains" remote="gitlab" revision="master" />
+
+<!-- InvictaOS -->
 <remove-project name="LineageOS/android_packages_screensavers_Basic" />
 <remove-project name="LineageOS/android_packages_screensavers_PhotoTable" />
 <remove-project name="LineageOS/android_packages_screensavers_WebView" />
 <remove-project name="LineageOS/android_packages_apps_PackageInstaller" />
-<remove-project name="LineageOS/android_packages_apps_Trebuchet" />
 <remove-project name="LineageOS/android_packages_apps_SetupWizard" />
 <remove-project name="LineageOS/android_packages_apps_CMUpdater" />
 <remove-project name="LineageOS/android_packages_apps_Camera2" />
@@ -18,6 +23,7 @@
 <remove-project name="LineageOS/android_packages_themes_HexoLibre" />
 <remove-project name="LineageOS/android_bionic" />
 <remove-project name="LineageOS/android_build" />
+<remove-project name="LineageOS/android_frameworks_av" />
 <remove-project name="LineageOS/android_frameworks_base" />
 <remove-project name="LineageOS/android_frameworks_native" />
 <remove-project name="LineageOS/android_packages_apps_Bluetooth" />
@@ -29,6 +35,8 @@
 <remove-project name="LineageOS/android_packages_apps_Dialer" />
 <remove-project name="LineageOS/android_packages_apps_ContactsCommon" />
 <remove-project name="LineageOS/android_packages_apps_PhoneCommon" />
+<remove-project name="LineageOS/android_packages_services_Telephony" />
+<remove-project name="LineageOS/android_packages_services_Telecomm" />
 <remove-project name="LineageOS/android_system_core" />
 <remove-project name="LineageOS/android_system_sepolicy" />
 <remove-project name="LineageOS/android_vendor_cm" />
@@ -49,39 +57,54 @@
 <project path="packages/apps/ExactCalculator" name="android_packages_apps_ExactCalculator" remote="gitlab" revision="cm-14.1" />
 <project path="packages/apps/PhoneCommon" name="android_packages_apps_PhoneCommon" remote="gitlab" revision="cm-14.1" />
 <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="gitlab" revision="cm-14.1" />
+<project path="packages/services/Telephony" name="android_packages_services_Telephony" remote="gitlab" revision="cm-14.1" />
+<project path="packages/services/Telecomm" name="android_packages_services_Telecomm" remote="gitlab" revision="cm-14.1" />
 <project path="system/core" name="android_system_core" remote="gitlab" revision="cm-14.1" />
 <project path="system/sepolicy" name="android_system_sepolicy" remote="gitlab" revision="cm-14.1" />
 <project path="vendor/cm" name="android_vendor_cm" remote="gitlab" revision="cm-14.1" />
 <project path="vendor/cmsdk" name="cm_platform_sdk" remote="gitlab" revision="cm-14.1" />
-
-<project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" remote="github" revision="cm-14.1" />
-<project path="packages/apps/OpenWeatherMapProvider" name="LineageOS/android_packages_apps_OpenWeatherMapProvider" remote="github" revision="cm-14.1" />
-
+<project path="packages/apps/PackageInstaller" name="android_packages_apps_PackageInstaller" remote="gitlab" revision="cm-14.1" />
 <project path="packages/services/OmniJaws" name="omnirom/android_packages_services_OmniJaws" revision="android-7.1" />
 <project path="packages/apps/ThemeInterfacer" name="substratum/interfacer" remote="github" revision="n-rootless" />
-<project path="packages/apps/PackageInstaller" name="Flash-ROM/packages_apps_PackageInstaller" remote="github" revision="n7.1.1" />
+<project path="packages/apps/SlimOTA" name="packages_apps_SlimOTA" remote="gitlab" revision="cm-14.1" >
+	<copyfile src="ota_conf" dest="ota_conf" />
+</project>
+
+<!-- Others -->
+<project path="frameworks/av" name="android_frameworks_av" remote="gitlab" revision="cm-14.1" />
+<project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" remote="github" revision="cm-14.1" />
 <project path="external/busybox" name="LineageOS/android_external_busybox" remote="github" revision="cm-14.1" />
 <project path="bootable/recovery-twrp" name="omnirom/android_bootable_recovery" remote="github" revision="android-7.1" />
-<project path="packages/apps/SlimLauncher" name="SlimRoms/packages_apps_SlimLauncher" remote="github" revision="ng7.1" />
-
-<project path="device/motorola/athene" name="android_device_motorola_athene" remote="gitlab" revision="cm-14.1" />
-<project path="vendor/motorola" name="proprietary_vendor_motorola_athene" remote="gitlab" revision="cm-14.1" />
-<project path="kernel/motorola/athene" name="android_kernel_motorola_athene" remote="gitlab" revision="cm-14.1" />
-
-<project path="device/samsung/meliusltexx" name="android_device_samsung_meliusltexx" remote="gitlab" revision="cm-14.1" />
-<project path="device/samsung/melius-common" name="android_device_samsung_melius-common" remote="gitlab" revision="cm-14.1" />
-<project path="vendor/samsung" name="proprietary_vendor_samsung" remote="gitlab" revision="cm-14.1" />
-<project path="kernel/samsung/msm8930-common" name="android_kernel_samsung_msm8930-common" remote="gitlab" revision="cm-14.1" />
-
-<project path="device/samsung/msm8930-common" name="LineageOS/android_device_samsung_msm8930-common" remote="github" revision="cm-14.1" />
 <project path="device/qcom/common" name="LineageOS/android_device_qcom_common" remote="github" revision="cm-14.1" />
 <project path="device/samsung/qcom-common" name="LineageOS/android_device_samsung_qcom-common" remote="github" revision="cm-14.1" />
 <project path="hardware/samsung" name="LineageOS/android_hardware_samsung" remote="github" revision="cm-14.1" />
 <project path="external/bson" name="LineageOS/android_external_bson" remote="github" revision="cm-14.1" />
 <project path="external/stlport" name="LineageOS/android_external_stlport" remote="github" revision="cm-14.1" />
+<project path="packages/apps/SlimLauncher" name="SlimRoms/packages_apps_SlimLauncher" remote="github" revision="ng7.1" />
 
-<project path="packages/apps/SlimOTA" name="packages_apps_SlimOTA" remote="gitlab" revision="cm-14.1" >
-	<copyfile src="ota_conf" dest="ota_conf" />
-</project>
+<!-- Athene -->
+<project path="device/motorola/athene" name="android_device_motorola_athene" remote="gitlab" revision="cm-14.1" />
+<project path="vendor/motorola" name="proprietary_vendor_motorola" remote="gitlab" revision="cm-14.1" />
+<project path="kernel/motorola/athene" name="android_kernel_motorola_athene" remote="gitlab" revision="cm-14.1" />
+
+<!-- Meliusltexx -->
+<project path="device/samsung/meliusltexx" name="android_device_samsung_meliusltexx" remote="gitlab" revision="cm-14.1" />
+<project path="device/samsung/melius-common" name="android_device_samsung_melius-common" remote="gitlab" revision="cm-14.1" />
+<project path="vendor/samsung" name="proprietary_vendor_samsung" remote="gitlab" revision="cm-14.1" />
+<project path="kernel/samsung/msm8930-common" name="android_kernel_samsung_msm8930-common" remote="gitlab" revision="cm-14.1" />
+<project path="device/samsung/msm8930-common" name="LineageOS/android_device_samsung_msm8930-common" remote="github" revision="cm-14.1" />
+
+<!-- Find7 -->
+<project name="LineageOS/android_device_oppo_find7" path="device/oppo/find7" remote="github" revision="cm-14.1" />
+<project name="LineageOS/android_device_oppo_find7-common" path="device/oppo/find7-common" remote="github" revision="cm-14.1" />
+<project name="LineageOS/android_device_oppo_msm8974-common" path="device/oppo/msm8974-common" remote="github" revision="cm-14.1" />
+<project name="LineageOS/android_kernel_oppo_msm8974" path="kernel/oppo/msm8974" remote="github" revision="cm-14.1" />
+<project name="LineageOS/android_device_oppo_common" path="device/oppo/common" remote="github" revision="cm-14.1" />
+<project name="proprietary_vendor_oppo" path="vendor/oppo"  remote="gitlab" revision="cm-14.1" /> 
+
+<!-- Lux -->
+<project name="LineageOS/android_device_motorola_lux" path="device/motorola/lux" remote="github" revision="cm-14.1" />
+<project name="LineageOS/android_device_motorola_msm8916-common" path="device/motorola/msm8916-common" remote="github" revision="cm-14.1" />
+<project name="LineageOS/android_kernel_motorola_msm8916" path="kernel/motorola/msm8916" remote="github" revision="cm-14.1" />
 
 </manifest>
