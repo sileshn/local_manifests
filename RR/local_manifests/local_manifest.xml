@@ -4,6 +4,11 @@
 <remote name="gitlab" fetch="ssh://git@gitlab.com/sileshn" />
 <remote name="sileshnp" fetch="ssh://git@bitbucket.org/sileshn" />
 
+<!-- Toolchains -->
+<remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" />
+<remove-project name="LineageOS/android_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9" />
+<project path="prebuilts/gcc/linux-x86/arm" name="toolchains" remote="gitlab" revision="master" />
+
 <!-- Remove CMTE -->
 <remove-project name="LineageOS/android_packages_apps_ThemeChooser" />
 <remove-project name="LineageOS/android_packages_providers_ThemesProvider" />
@@ -22,11 +27,11 @@
 </project>
 
 <project path="device/motorola/athene" name="android_device_motorola_athene" remote="gitlab" revision="rr" />
-<project path="vendor/motorola" name="proprietary_vendor_motorola_athene" remote="gitlab" revision="cm-14.1" />
+<project path="vendor/motorola" name="proprietary_vendor_motorola" remote="gitlab" revision="cm-14.1" />
 <project path="kernel/motorola/athene" name="android_kernel_motorola_athene" remote="gitlab" revision="cm-14.1" />
 
 <project path="device/samsung/meliusltexx" name="android_device_samsung_meliusltexx" remote="gitlab" revision="rr" />
-<project path="device/samsung/melius-common" name="android_device_samsung_melius-common" remote="gitlab" revision="cm-14.1" />
+<project path="device/samsung/melius-common" name="android_device_samsung_melius-common" remote="gitlab" revision="rr" />
 <project path="vendor/samsung" name="proprietary_vendor_samsung" remote="gitlab" revision="cm-14.1" />
 <project path="kernel/samsung/msm8930-common" name="android_kernel_samsung_msm8930-common" remote="gitlab" revision="cm-14.1" />
 
