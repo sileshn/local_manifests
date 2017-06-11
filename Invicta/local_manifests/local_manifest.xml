@@ -9,6 +9,20 @@
 <remove-project name="LineageOS/android_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9" />
 <project path="prebuilts/gcc/linux-x86/arm" name="toolchains" remote="gitlab" revision="master" />
 
+<!-- LineageOS crap -->
+<remove-project name="LineageOS/ansible" />
+<remove-project name="LineageOS/cm_crowdin" />
+<remove-project name="LineageOS/cve_tracker" />
+<remove-project name="LineageOS/hudson" />
+<remove-project name="LineageOS/mirror" />
+<remove-project name="LineageOS/slackbot" />
+<remove-project name="LineageOS/tribble-tracker" />
+<remove-project name="LineageOS/lineageos_updater" />
+<remove-project name="LineageOS/www" />
+<remove-project name="LineageOS/lineage_wiki" />
+<remove-project name="LineageOS/contributors-cloud-generator" />
+<remove-project name="LineageOS/scripts" />
+
 <!-- InvictaOS -->
 <remove-project name="LineageOS/android_packages_screensavers_Basic" />
 <remove-project name="LineageOS/android_packages_screensavers_PhotoTable" />
@@ -18,6 +32,7 @@
 <remove-project name="LineageOS/android_packages_apps_CMUpdater" />
 <remove-project name="LineageOS/android_packages_apps_Camera2" />
 <remove-project name="LineageOS/android_packages_apps_ThemeChooser" />
+<remove-project name="LineageOS/android_packages_apps_LockClock" />
 <remove-project name="LineageOS/android_packages_providers_ThemesProvider" />
 <remove-project name="LineageOS/android_packages_services_ThemeManagerService" />
 <remove-project name="LineageOS/android_packages_themes_HexoLibre" />
@@ -46,6 +61,7 @@
 <project path="build" name="android_build" remote="gitlab" revision="cm-14.1">
     <copyfile src="core/root.mk" dest="Makefile" />
 </project>
+<project path="frameworks/av" name="android_frameworks_av" remote="gitlab" revision="cm-14.1" />
 <project path="frameworks/base" name="android_frameworks_base" remote="gitlab" revision="cm-14.1" />
 <project path="frameworks/native" name="android_frameworks_native" remote="gitlab" revision="cm-14.1" />
 <project path="packages/apps/Bluetooth" name="android_packages_apps_Bluetooth" remote="gitlab" revision="cm-14.1" />
@@ -65,31 +81,40 @@
 <project path="vendor/cmsdk" name="cm_platform_sdk" remote="gitlab" revision="cm-14.1" />
 <project path="packages/apps/PackageInstaller" name="android_packages_apps_PackageInstaller" remote="gitlab" revision="cm-14.1" />
 <project path="packages/services/OmniJaws" name="omnirom/android_packages_services_OmniJaws" revision="android-7.1" />
-<project path="packages/apps/ThemeInterfacer" name="substratum/interfacer" remote="github" revision="n-rootless" />
+<project path="packages/services/ThemeInterfacer" name="substratum/interfacer" remote="github" revision="n-rootless" />
 <project path="packages/apps/SlimOTA" name="packages_apps_SlimOTA" remote="gitlab" revision="cm-14.1" >
 	<copyfile src="ota_conf" dest="ota_conf" />
 </project>
 
-<!-- Others -->
-<project path="frameworks/av" name="android_frameworks_av" remote="gitlab" revision="cm-14.1" />
+<!-- Misc -->
+<remove-project name="LineageOS/android_packages_apps_FMRadio" />
+<project path="packages/apps/FMRadio" name="android_packages_apps_FMRadio" remote="gitlab" revision="cm-14.1" />
+
+<remove-project name="LineageOS/android_packages_inputmethods_LatinIME" />
+<project path="packages/inputmethods/LatinIME" name="crdroidandroid/android_packages_inputmethods_LatinIME" remote="github" revision="7.1" />
+
 <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" remote="github" revision="cm-14.1" />
-<project path="external/busybox" name="LineageOS/android_external_busybox" remote="github" revision="cm-14.1" />
-<project path="bootable/recovery-twrp" name="omnirom/android_bootable_recovery" remote="github" revision="android-7.1" />
 <project path="device/qcom/common" name="LineageOS/android_device_qcom_common" remote="github" revision="cm-14.1" />
 <project path="device/samsung/qcom-common" name="LineageOS/android_device_samsung_qcom-common" remote="github" revision="cm-14.1" />
 <project path="hardware/samsung" name="LineageOS/android_hardware_samsung" remote="github" revision="cm-14.1" />
 <project path="external/bson" name="LineageOS/android_external_bson" remote="github" revision="cm-14.1" />
-<project path="external/stlport" name="LineageOS/android_external_stlport" remote="github" revision="cm-14.1" />
-<project path="packages/apps/SlimLauncher" name="SlimRoms/packages_apps_SlimLauncher" remote="github" revision="ng7.1" />
+
+<!-- TWRP -->
+<project path="external/busybox" name="mdmower/android_external_busybox" remote="github" revision="cm-14.1" />
+<project path="bootable/recovery-twrp" name="omnirom/android_bootable_recovery" remote="github" revision="android-7.1" />
+
+<!-- Music -->
+<remove-project name="LineageOS/android_packages_apps_Eleven" />
+<project path="packages/apps/MusicFX" name="DirtyUnicorns/android_packages_apps_MusicFX" remote="github" revision="n7x" />
+<project path="packages/apps/DSPManager" name="omnirom/android_packages_apps_DSPManager" remote="github" revision="android-7.1" />
+<project path="packages/apps/Phonograph" name="omnirom/android_packages_apps_Phonograph" remote="github" revision="android-7.1" />
 
 <!-- Athene -->
 <project path="device/motorola/athene" name="android_device_motorola_athene" remote="gitlab" revision="cm-14.1" />
-<project path="vendor/motorola" name="proprietary_vendor_motorola" remote="gitlab" revision="cm-14.1" />
+<project path="vendor/motorola/athene" name="proprietary_vendor_motorola_athene" remote="gitlab" revision="cm-14.1" />
 <project path="kernel/motorola/athene" name="android_kernel_motorola_athene" remote="gitlab" revision="cm-14.1" />
 
 <!-- Meliusltexx -->
-<project path="device/samsung/meliusltexx" name="android_device_samsung_meliusltexx" remote="gitlab" revision="cm-14.1" />
-<project path="device/samsung/melius-common" name="android_device_samsung_melius-common" remote="gitlab" revision="cm-14.1" />
 <project path="vendor/samsung" name="proprietary_vendor_samsung" remote="gitlab" revision="cm-14.1" />
 <project path="kernel/samsung/msm8930-common" name="android_kernel_samsung_msm8930-common" remote="gitlab" revision="cm-14.1" />
 <project path="device/samsung/msm8930-common" name="LineageOS/android_device_samsung_msm8930-common" remote="github" revision="cm-14.1" />
@@ -102,17 +127,17 @@
 <project name="LineageOS/android_device_oppo_common" path="device/oppo/common" remote="github" revision="cm-14.1" />
 <project name="proprietary_vendor_oppo" path="vendor/oppo"  remote="gitlab" revision="cm-14.1" /> 
 
-<!-- Lux -->
-<project name="LineageOS/android_device_motorola_lux" path="device/motorola/lux" remote="github" revision="cm-14.1" />
-<project name="LineageOS/android_device_motorola_msm8916-common" path="device/motorola/msm8916-common" remote="github" revision="cm-14.1" />
-<project name="LineageOS/android_kernel_motorola_msm8916" path="kernel/motorola/msm8916" remote="github" revision="cm-14.1" />
+<!-- Potter -->
+<project path="device/motorola/potter" name="boulzordev/android_device_motorola_potter" remote="github" revision="cm-14.1" />
+<project path="vendor/motorola/potter" name="boulzordev/android_vendor_motorola_potter" remote="github" revision="master" />
+<project path="kernel/motorola/msm8953" name="boulzordev/android_kernel_motorola_msm8953" remote="github" revision="cm-14.1" />
 
-<!-- Oneplus3 -->
-<project name="LineageOS/android_device_oneplus_oneplus3" path="device/oneplus/oneplus3" remote="github" />4
-<project name="LineageOS/android_kernel_oneplus_msm8996" path="kernel/oneplus/msm8996" remote="github" />
-<project name="LineageOS/android_vendor_nxp-nfc_opensource_frameworks" path="vendor/nxp-nfc/opensource/frameworks" remote="github" />
-<project name="LineageOS/android_vendor_nxp-nfc_opensource_libnfc-nci" path="vendor/nxp-nfc/opensource/libnfc-nci" remote="github" />
-<project name="LineageOS/android_vendor_nxp-nfc_opensource_Nfc" path="vendor/nxp-nfc/opensource/Nfc" remote="github" />
-<project name="proprietary_vendor_oneplus" path="vendor/oneplus"  remote="gitlab" revision="master" />
+<!-- Wingtech -->
+<project name="LineageOS/android_device_wingtech_wt88047" path="device/wingtech/wt88047" remote="github" />
+<project name="LineageOS/android_device_cyanogen_msm8916-common" path="device/cyanogen/msm8916-common" remote="github" />
+<project name="LineageOS/android_kernel_wingtech_msm8916" path="kernel/wingtech/msm8916" remote="github" />
+<project name="LineageOS/android_external_sony_boringssl-compat" path="external/sony/boringssl-compat" remote="github" />
+<project name="LineageOS/android_external_stlport" path="external/stlport" remote="github" />
+<project path="vendor/wingtech" name="TheMuppets/proprietary_vendor_wingtech" remote="github" revision="cm-14.1" />
 
 </manifest>
