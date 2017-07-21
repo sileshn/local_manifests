@@ -7,13 +7,8 @@
 <!-- Toolchains -->
 <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" />
 <remove-project name="LineageOS/android_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9" />
-<project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" name="arm-eabi-4.8" remote="gitlab" revision="master" />
-<project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9" name="arm-eabi-4.9" remote="gitlab" revision="master" />
 <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-5.3" name="arm-eabi-5.3" remote="gitlab" revision="master" />
-<project path="prebuilts/gcc/linux-x86/arm/arm-eabi-6.0" name="arm-eabi-6.0" remote="gitlab" revision="master" />
-<project path="prebuilts/gcc/linux-x86/arm/arm-eabi-7.0" name="arm-eabi-7.0" remote="gitlab" revision="master" />
 <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="arm-linux-androideabi-4.9" remote="gitlab" revision="master" />
-<project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-5.3" name="arm-linux-androideabi-5.3" remote="gitlab" revision="master" />
 
 <!-- LineageOS crap -->
 <remove-project name="LineageOS/ansible" />
@@ -62,6 +57,7 @@
 <remove-project name="LineageOS/android_system_sepolicy" />
 <remove-project name="LineageOS/android_vendor_cm" />
 <remove-project name="LineageOS/cm_platform_sdk" />
+<remove-project name="LineageOS/android_packages_apps_Stk" />
 
 <project path="bionic" name="android_bionic" remote="gitlab" revision="cm-14.1" />
 <project path="build" name="android_build" remote="gitlab" revision="cm-14.1">
@@ -93,10 +89,10 @@
 	<copyfile src="ota_conf" dest="ota_conf" />
 </project>
 <project path="packages/apps/SlimLauncher" name="SlimRoms/packages_apps_SlimLauncher" remote="github" revision="ng7.1" />
-<!--<project path="packages/apps/Launcher3" name="omnirom/android_packages_apps_Launcher3" remote="github" revision="android-7.1" />
-<project path="packages/apps/CMUpdater" name="android_packages_apps_CMUpdater" remote="gitlab" revision="cm-14.1" />-->
+<project path="packages/apps/Launcher3" name="DirtyUnicorns/android_packages_apps_Launcher3" remote="github" revision="n7x" />
+<project path="external/brotli" name="luca020400/android_external_brotli" remote="github" revision="cm-14.1" />
 
-<!-- Misc -->
+<!-- FMRadio -->
 <remove-project name="LineageOS/android_packages_apps_FMRadio" />
 <project path="packages/apps/FMRadio" name="android_packages_apps_FMRadio" remote="gitlab" revision="cm-14.1" />
 
@@ -113,6 +109,17 @@
 <project path="hardware/samsung" name="LineageOS/android_hardware_samsung" remote="github" revision="cm-14.1" />
 <project path="external/bson" name="LineageOS/android_external_bson" remote="github" revision="cm-14.1" />
 
+<!-- Xposed art -->
+<remove-project name="LineageOS/android_art" />
+<project path="art" name="android_art" remote="gitlab" revision="cm-14.1" />
+
+<!-- sdclang -->
+<remove-project name="LineageOS/android_device_qcom_common" />
+<remove-project name="platform/external/sqlite" />
+<project path="device/qcom/common" name="android_device_qcom_common" remote="gitlab" revision="cm-14.1" />
+<project path="external/sqlite" name="CarbonROM/android_external_sqlite" remote="github" revision="cr-5.1" />
+<project name="LegendROM-N/platform_vendor_qcom_sdclang-3.8" path="vendor/qcom/sdclang-3.8/linux-x86" remote="github" revision="cm-14.1" />
+
 <!-- TWRP -->
 <project path="external/busybox" name="mdmower/android_external_busybox" remote="github" revision="cm-14.1" />
 <project path="bootable/recovery-twrp" name="omnirom/android_bootable_recovery" remote="github" revision="android-7.1" />
@@ -121,31 +128,5 @@
 <project path="device/motorola/athene" name="android_device_motorola_athene" remote="gitlab" revision="cm-14.1" />
 <project path="vendor/motorola/athene" name="proprietary_vendor_motorola_athene" remote="gitlab" revision="cm-14.1" />
 <project path="kernel/motorola/athene" name="android_kernel_motorola_athene" remote="gitlab" revision="cm-14.1" />
-
-<!-- Meliusltexx -->
-<project path="vendor/samsung" name="proprietary_vendor_samsung" remote="gitlab" revision="cm-14.1" />
-<project path="kernel/samsung/msm8930-common" name="android_kernel_samsung_msm8930-common" remote="gitlab" revision="cm-14.1" />
-<project path="device/samsung/msm8930-common" name="LineageOS/android_device_samsung_msm8930-common" remote="github" revision="cm-14.1" />
-
-<!-- Find7 -->
-<project name="LineageOS/android_device_oppo_find7" path="device/oppo/find7" remote="github" revision="cm-14.1" />
-<project name="LineageOS/android_device_oppo_find7-common" path="device/oppo/find7-common" remote="github" revision="cm-14.1" />
-<project name="LineageOS/android_device_oppo_msm8974-common" path="device/oppo/msm8974-common" remote="github" revision="cm-14.1" />
-<project name="LineageOS/android_kernel_oppo_msm8974" path="kernel/oppo/msm8974" remote="github" revision="cm-14.1" />
-<project name="LineageOS/android_device_oppo_common" path="device/oppo/common" remote="github" revision="cm-14.1" />
-<project name="proprietary_vendor_oppo" path="vendor/oppo"  remote="gitlab" revision="cm-14.1" /> 
-
-<!-- Potter -->
-<project path="device/motorola/potter" name="boulzordev/android_device_motorola_potter" remote="github" revision="cm-14.1" />
-<project path="vendor/motorola/potter" name="boulzordev/android_vendor_motorola_potter" remote="github" revision="master" />
-<project path="kernel/motorola/msm8953" name="boulzordev/android_kernel_motorola_msm8953" remote="github" revision="cm-14.1" />
-
-<!-- Wingtech -->
-<project name="LineageOS/android_device_wingtech_wt88047" path="device/wingtech/wt88047" remote="github" />
-<project name="LineageOS/android_device_cyanogen_msm8916-common" path="device/cyanogen/msm8916-common" remote="github" />
-<project name="LineageOS/android_kernel_wingtech_msm8916" path="kernel/wingtech/msm8916" remote="github" />
-<project name="LineageOS/android_external_sony_boringssl-compat" path="external/sony/boringssl-compat" remote="github" />
-<project name="LineageOS/android_external_stlport" path="external/stlport" remote="github" />
-<project path="vendor/wingtech" name="TheMuppets/proprietary_vendor_wingtech" remote="github" revision="cm-14.1" />
 
 </manifest>
