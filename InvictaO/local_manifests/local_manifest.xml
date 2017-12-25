@@ -1,22 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-<remote name="gitlab" sync-c="true" revision="lineage-15.0" fetch="ssh://git@gitlab.com/sileshn" />
-<remote name="jhenrique09" sync-c="true" fetch="https://gitlab.com/jhenrique09" />
-<remote name="sileshnp" sync-c="true" fetch="ssh://git@bitbucket.org/sileshn" />
-<remote name="aosp-kenzo" sync-c="true" revision="oreo" fetch="https://github.com/AOSP-O-Kenzo/" />
-<remote  name="crdroid" fetch=".." sync-c="true" sync-j="4" revision="8.0" />
-<remote  name="omni" fetch=".." sync-c="true" sync-j="4" revision="android-8.0" />
+<remote name="gitlab" 
+          sync-c="true" 
+          revision="lineage-15.0" 
+          fetch="ssh://git@gitlab.com/sileshn" />
 
+  <remote name="sileshnp" 
+          sync-c="true" 
+          fetch="ssh://git@bitbucket.org/sileshn" />
 
-<!-- Toolchains -->
-<project path="prebuilts/gcc/linux-x86/arm/gcc-linaro-7.1.1" name="gcc-linaro-7.1.1" remote="gitlab" revision="master" />
+  <remote name="aosp-kenzo" 
+          sync-c="true" 
+          revision="oreo" 
+          fetch="https://github.com/AOSP-O-Kenzo/" />
 
-<!-- Omni -->
-<project path="packages/services/OmniJaws" name="omnirom/android_packages_services_OmniJaws" remote="omni" />
-<project path="packages/apps/OmniStyle" name="omnirom/android_packages_apps_OmniStyle" remote="omni" />
+  <remote name="crdroid" 
+          fetch=".." 
+          sync-c="true" 
+          sync-j="4" 
+          revision="8.0" />
 
-<!-- LineageOS crap -->
+  <remote name="omni"
+          fetch=".." 
+          sync-c="true" 
+          sync-j="4" 
+          revision="android-8.0" />
+
+  <remote name="bitbucket" 
+          fetch="https://bitbucket.org/" 
+          sync-c="true" 
+          sync-j="4" 
+          revision="master" />
+
+  <remote name="xenon" 
+          fetch=".." 
+          sync-c="true" 
+          sync-j="4" 
+          revision="o" />
+
+  <remote name="zx2c4" 
+          fetch="https://git.zx2c4.com/" />
+
+<!-- Remove -->
 <remove-project name="LineageOS/ansible" />
 <remove-project name="LineageOS/cm_crowdin" />
 <remove-project name="LineageOS/cve_tracker" />
@@ -30,17 +56,29 @@
 <remove-project name="LineageOS/contributors-cloud-generator" />
 <remove-project name="LineageOS/scripts" />
 
-<!-- InvictaOS -->
 <remove-project name="LineageOS/android_build" />
+<remove-project name="LineageOS/android_frameworks_av" />
+<remove-project name="LineageOS/android_frameworks_native" />
 <remove-project name="LineageOS/android_frameworks_base" />
 <remove-project name="LineageOS/android_frameworks_opt_telephony" />
+<remove-project name="LineageOS/android_packages_apps_Bluetooth" />
+<remove-project name="LineageOS/android_packages_apps_Dialer" />
+<remove-project name="LineageOS/android_packages_apps_LineageParts" />
+<remove-project name="LineageOS/android_packages_apps_Messaging" />
+<remove-project name="LineageOS/android_packages_apps_PackageInstaller" />
+<remove-project name="LineageOS/android_packages_apps_Recorder" />
 <remove-project name="LineageOS/android_packages_apps_Settings" />
-<remove-project name="LineageOS/android_packages_inputmethods_LatinIME" />
+<remove-project name="LineageOS/android_packages_providers_DownloadProvider" />
+<remove-project name="LineageOS/android_packages_providers_MediaProvider" />
 <remove-project name="LineageOS/android_packages_services_Telephony" />
 <remove-project name="LineageOS/android_system_core" />
 <remove-project name="LineageOS/android_system_media" />
+<remove-project name="LineageOS/android_system_sepolicy" />
 <remove-project name="LineageOS/android_vendor_lineage" />
+<remove-project name="platform/external/wpa_supplicant_8" />
 
+
+<!-- InvictaOS -->
 <project path="build/make" name="android_build" remote="gitlab" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
@@ -50,26 +88,50 @@
     <linkfile src="target" dest="build/target" />
     <linkfile src="tools" dest="build/tools" />
 </project>
+<project path="frameworks/av" name="android_frameworks_av" remote="gitlab" />
 <project path="frameworks/base" name="android_frameworks_base" remote="gitlab" />
+<project path="frameworks/native" name="android_frameworks_native" remote="gitlab" />
 <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="gitlab" />
-<project path="packages/apps/InvictaSettings" name="android_packages_apps_InvictaSettings" remote="gitlab" /> 
+<project path="packages/apps/Bluetooth" name="android_packages_apps_Bluetooth" remote="gitlab" />
+<project path="packages/apps/Dialer" name="android_packages_apps_Dialer" remote="gitlab" />
+<project path="packages/apps/InvictaSettings" name="android_packages_apps_InvictaSettings" remote="gitlab" />
+<project path="packages/apps/LineageParts" name="android_packages_apps_LineageParts" remote="gitlab" />
+<project path="packages/apps/Messaging" name="android_packages_apps_Messaging" remote="gitlab" />
+<project path="packages/apps/PackageInstaller" name="android_packages_apps_PackageInstaller" remote="gitlab" />
 <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="gitlab" />
-<project path="packages/apps/Snap" name="crdroidandroid/android_packages_apps_Snap" remote="crdroid" />
-<project path="packages/inputmethods/LatinIME" name="crdroidandroid/android_packages_inputmethods_LatinIME" remote="crdroid" />
+<project path="packages/providers/DownloadProvider" name="android_packages_providers_DownloadProvider" remote="gitlab" />
+<project path="packages/providers/MediaProvider" name="android_packages_providers_MediaProvider" remote="gitlab" />
 <project path="packages/services/Telephony" name="android_packages_services_Telephony" remote="gitlab" />
 <project path="vendor/lineage" name="android_vendor_lineage" remote="gitlab" />
 <project path="system/core" name="android_system_core" remote="gitlab" />
 <project path="system/media" name="android_system_media" remote="gitlab" />
+<project path="system/sepolicy" name="android_system_sepolicy" remote="gitlab" />
+<project path="external/wpa_supplicant_8" name="android_external_wpa_supplicant_8" remote="gitlab" />
 
-<!-- LineageActions -->
-<project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" />
+<!-- Misc -->
+<remove-project name="LineageOS/android_packages_apps_Gallery2" />
+<remove-project name="LineageOS/android_packages_apps_Trebuchet" />
+<remove-project name="LineageOS/android_packages_inputmethods_LatinIME" />
+<project path="packages/apps/CameraNextMod" name="FireHound/android_packages_apps_CameraNextMod" remote="github" revision="o" />
+<project path="packages/apps/Gallery2" name="omnirom/android_packages_apps_Gallery2" remote="omni" />
+<project path="packages/apps/Trebuchet" name="arco/android_packages_apps_Trebuchet" remote="github" revision="lineage-15.0" />
+<project path="packages/apps/Snap" name="nitrogen-project/android_packages_apps_Snap" remote="github" revision="o" />
+<project path="packages/inputmethods/LatinIME" name="crdroidandroid/android_packages_inputmethods_LatinIME" remote="crdroid" />
 
-<!-- Gapps -->
-<project path="vendor/gapps" name="vendor_gapps" clone-depth="1" revision="oreo" remote="jhenrique09" />
+<!-- Wireguard -->
+<!--<project remote="zx2c4" name="android_kernel_wireguard" path="kernel/wireguard" revision="master" sync-s="true" />-->
 
-<!-- Athene -->
-<project path="device/motorola/athene" name="android_device_motorola_athene" remote="gitlab" />
-<project path="vendor/motorola/athene" name="proprietary_vendor_motorola_athene" remote="gitlab" />
-<project path="kernel/motorola/athene" name="android_kernel_motorola_athene" remote="gitlab" />
+<!-- Omni -->
+<project path="packages/services/OmniJaws" name="omnirom/android_packages_services_OmniJaws" remote="omni" />
+<project path="packages/apps/OmniStyle" name="omnirom/android_packages_apps_OmniStyle" remote="omni" />
+
+<!-- LineageOS -->
+<project path="device/qcom/common" name="LineageOS/android_device_qcom_common" remote="github" revision="lineage-15.0" />
+<project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" remote="github" revision="lineage-15.0" />
+
+<!-- Mido -->
+<project path="device/xiaomi/mido" name="android_device_xiaomi_mido" remote="gitlab" />
+<project path="kernel/xiaomi/mido" name="android_kernel_xiaomi_mido" remote="gitlab" />
+<project path="vendor/xiaomi" name="proprietary_vendor_xiaomi" remote="gitlab" />
 
 </manifest>
