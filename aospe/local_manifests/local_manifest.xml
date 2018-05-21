@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+<remote name="gitlab" 
+          sync-c="true" 
+          revision="aex" 
+          fetch="ssh://git@gitlab.com/sileshn" />
+
+
+<!-- Remove -->
+<remove-project name="device/google/wahoo-kernel" />
+<remove-project name="device/google/wahoo" />
+
+<!-- clang -->
+<remove-project name="platform/prebuilts/clang/host/linux-x86" />
+<project path="prebuilts/clang/host/linux-x86" name="Adesh15/platform_prebuilts_clang_host_linux-x86" remote="github" revision="oreo-mr1" />
+
+<!-- Mido -->
+<remove-project name="device_xiaomi_mido" />
+<remove-project name="device_xiaomi_msm8953-common" />
+<remove-project name="kernel_xiaomi_msm8953" />
+<remove-project name="proprietary_vendor_xiaomi" />
+<project name="android_device_xiaomi_mido" path="device/xiaomi/mido" remote="gitlab" />
+<project name="android_device_xiaomi_msm8953-common" path="device/xiaomi/msm8953-common" remote="gitlab" />
+<project name="android_kernel_xiaomi_mido" path="kernel/xiaomi/msm8953" remote="gitlab" />
+<project name="proprietary_vendor_xiaomi" path="vendor/xiaomi" remote="gitlab" />
+
+<!-- LineageOS -->
+<project path="kernel/samsung/msm8930-common" name="android_kernel_samsung_msm8930-common" remote="los" />
+<project path="device/samsung/msm8930-common" name="android_device_samsung_msm8930-common" remote="los" />
+<project path="device/samsung/qcom-common" name="android_device_samsung_qcom-common" remote="los" />
+<project path="hardware/samsung" name="android_hardware_samsung" remote="los" />
+<project path="packages/apps/Trebuchet" name="android_packages_apps_Trebuchet" remote="los" />
+<project path="packages/apps/Recorder" name="android_packages_apps_Recorder" remote="los" />
+<project path="packages/apps/Eleven" name="android_packages_apps_Eleven" remote="los" />
+<project path="packages/apps/AudioFX" name="android_packages_apps_AudioFX" remote="los" />
+
+<!-- Melius -->
+<project path="device/samsung/meliusltexx" name="sileshn/device_samsung_meliusltexx" remote="github" revision="8.1.x" />
+<project path="device/samsung/melius-common" name="sileshn/device_samsung_melius-common" remote="github" revision="8.1.x" />
+<project path="vendor/samsung" name="sileshn/proprietary_vendor_samsung" remote="github"  revision="8.1.x" />
+
+</manifest>
