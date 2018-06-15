@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+<remote name="gitlab" 
+          sync-c="true" 
+          revision="aex" 
+          fetch="ssh://git@gitlab.com/sileshn" />
+
+<!-- linaro -->
+<project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linaro-7.3" name="djb77/aarch64-linux-gnu" remote="github" revision="master" />
+
+<!-- Mido -->
+<project name="android_device_xiaomi_mido" path="device/xiaomi/mido" remote="gitlab" revision="fh" />
+<project name="android_device_xiaomi_msm8953-common" path="device/xiaomi/msm8953-common" remote="gitlab" revision="fh" />
+<project name="android_kernel_xiaomi_mido" path="kernel/xiaomi/msm8953" remote="gitlab" />
+<project name="proprietary_vendor_xiaomi" path="vendor/xiaomi" remote="gitlab" />
+
+<!-- LineageOS -->
+<project path="kernel/samsung/msm8930-common" name="LineageOS/android_kernel_samsung_msm8930-common" remote="github" revision="lineage-15.1" />
+<project path="device/samsung/msm8930-common" name="LineageOS/android_device_samsung_msm8930-common" remote="github" revision="lineage-15.1" />
+<project path="device/qcom/common" name="LineageOS/android_device_qcom_common" remote="github" revision="lineage-15.1" />
+<project path="device/samsung/qcom-common" name="LineageOS/android_device_samsung_qcom-common" remote="github" revision="lineage-15.1" />
+<project path="hardware/samsung" name="LineageOS/android_hardware_samsung" remote="github" revision="lineage-15.1" />
+<project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" remote="github" revision="lineage-15.1" />
+
+<!-- Melius -->
+<project path="device/samsung/meliusltexx" name="sileshn/android_device_samsung_meliusltexx" remote="github" revision="fh" />
+<project path="device/samsung/melius-common" name="sileshn/android_device_samsung_melius-common" remote="github" revision="fh" />
+<project path="vendor/samsung" name="sileshn/proprietary_vendor_samsung" remote="github"  revision="fh" />
+
+</manifest>

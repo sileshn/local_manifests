@@ -11,9 +11,8 @@
 <remove-project name="device/google/wahoo-kernel" />
 <remove-project name="device/google/wahoo" />
 
-<!-- clang -->
-<remove-project name="platform/prebuilts/clang/host/linux-x86" />
-<project path="prebuilts/clang/host/linux-x86" name="Adesh15/platform_prebuilts_clang_host_linux-x86" remote="github" revision="oreo-mr1" />
+<!-- linaro -->
+<project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linaro-7.3" name="djb77/aarch64-linux-gnu" remote="github" revision="master" />
 
 <!-- Mido -->
 <remove-project name="device_xiaomi_mido" />
@@ -30,10 +29,7 @@
 <project path="device/samsung/msm8930-common" name="android_device_samsung_msm8930-common" remote="los" />
 <project path="device/samsung/qcom-common" name="android_device_samsung_qcom-common" remote="los" />
 <project path="hardware/samsung" name="android_hardware_samsung" remote="los" />
-<project path="packages/apps/Trebuchet" name="android_packages_apps_Trebuchet" remote="los" />
 <project path="packages/apps/Recorder" name="android_packages_apps_Recorder" remote="los" />
-<project path="packages/apps/Eleven" name="android_packages_apps_Eleven" remote="los" />
-<project path="packages/apps/AudioFX" name="android_packages_apps_AudioFX" remote="los" />
 
 <!-- Melius -->
 <project path="device/samsung/meliusltexx" name="sileshn/device_samsung_meliusltexx" remote="github" revision="8.1.x" />
