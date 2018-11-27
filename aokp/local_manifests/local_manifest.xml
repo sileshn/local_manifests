@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+<remote name="sileshn" 
+          sync-c="true" 
+          revision="lineage-16.0" 
+          fetch="ssh://git@github.com/sileshn" />
+
+<!-- Hals -->
+<remove-project name="LineageOS/android_hardware_qcom_display" />
+<project path="hardware/qcom/display" name="LineageOS/android_hardware_qcom_display" />
+<project path="hardware/qcom/display-caf/msm8960" name="arco/android_hardware_qcom_display" revision="lineage-16.0-caf-8960" />
+<project path="hardware/qcom/display-caf/apq8084" name="LineageOS/android_hardware_qcom_display" revision="lineage-16.0-caf-8084" />
+<project path="hardware/qcom/display-caf/msm8916" name="LineageOS/android_hardware_qcom_display" revision="lineage-16.0-caf-8916" />
+<project path="hardware/qcom/display-caf/msm8952" name="LineageOS/android_hardware_qcom_display" revision="lineage-16.0-caf-8952" />
+<project path="hardware/qcom/display-caf/msm8974" name="LineageOS/android_hardware_qcom_display" revision="lineage-16.0-caf-8974" />
+<project path="hardware/qcom/display-caf/msm8994" name="LineageOS/android_hardware_qcom_display" revision="lineage-16.0-caf-8994" />
+<project path="hardware/qcom/display-caf/msm8996" name="LineageOS/android_hardware_qcom_display" revision="lineage-16.0-caf-8996" />
+<project path="hardware/qcom/display-caf/msm8998" name="LineageOS/android_hardware_qcom_display" revision="lineage-16.0-caf-8998" />
+
+<remove-project name="LineageOS/android_hardware_qcom_media" />
+<project path="hardware/qcom/media" name="LineageOS/android_hardware_qcom_media" />
+<project path="hardware/qcom/media-caf/msm8960" name="arco/android_hardware_qcom_media" revision="lineage-16.0-caf-8960" />
+<project path="hardware/qcom/media-caf/apq8084" name="LineageOS/android_hardware_qcom_media" revision="lineage-16.0-caf-8084" />
+<project path="hardware/qcom/media-caf/msm8916" name="LineageOS/android_hardware_qcom_media" revision="lineage-16.0-caf-8916" />
+<project path="hardware/qcom/media-caf/msm8952" name="LineageOS/android_hardware_qcom_media" revision="lineage-16.0-caf-8952" />
+<project path="hardware/qcom/media-caf/msm8974" name="LineageOS/android_hardware_qcom_media" revision="lineage-16.0-caf-8974" />
+<project path="hardware/qcom/media-caf/msm8994" name="LineageOS/android_hardware_qcom_media" revision="lineage-16.0-caf-8994" />
+<project path="hardware/qcom/media-caf/msm8996" name="LineageOS/android_hardware_qcom_media" revision="lineage-16.0-caf-8996" />
+<project path="hardware/qcom/media-caf/msm8998" name="LineageOS/android_hardware_qcom_media" revision="lineage-16.0-caf-8998" />
+
+<!-- LineageOS -->
+<project path="kernel/samsung/msm8930-common" name="LineageOS/android_kernel_samsung_msm8930-common" remote="github" />
+<project path="device/samsung/qcom-common" name="LineageOS/android_device_samsung_qcom-common" remote="github" />
+<project path="hardware/samsung" name="LineageOS/android_hardware_samsung" remote="github" />
+<project path="packages/apps/Snap" name="arco/android_packages_apps_Snap" remote="github" />
+<project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" remote="github" />
+
+<!-- Melius -->
+<project path="device/samsung/meliusltexx" name="android_device_samsung_meliusltexx" remote="sileshn" revision="aokp" />
+<project path="device/samsung/melius-common" name="android_device_samsung_melius-common" remote="sileshn" />
+<project path="vendor/samsung" name="proprietary_vendor_samsung" remote="sileshn"  />
+<project path="device/samsung/msm8930-common" name="android_device_samsung_msm8930-common" remote="sileshn" />
+
+</manifest>

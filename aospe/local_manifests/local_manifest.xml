@@ -3,37 +3,21 @@
 
 <remote name="gitlab" 
           sync-c="true" 
-          revision="aex" 
+          revision="aexP" 
           fetch="ssh://git@gitlab.com/sileshn" />
 
+<remote name="pixel"
+          fetch="https://github.com/PixelExperience"
+          revision="pie"
+          review="gerrit.pixelexperience.org" />
 
-<!-- Remove -->
-<remove-project name="device/google/wahoo-kernel" />
-<remove-project name="device/google/wahoo" />
-
-<!-- linaro -->
-<project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linaro-7.3" name="djb77/aarch64-linux-gnu" remote="github" revision="master" />
+<!-- Misc -->
+<project path="vendor/MiuiCamera" name="PixelExperience-Devices/vendor_MiuiCamera" remote="github" revision="pie-whyred" />
 
 <!-- Mido -->
-<remove-project name="device_xiaomi_mido" />
-<remove-project name="device_xiaomi_msm8953-common" />
-<remove-project name="kernel_xiaomi_msm8953" />
-<remove-project name="proprietary_vendor_xiaomi" />
 <project name="android_device_xiaomi_mido" path="device/xiaomi/mido" remote="gitlab" />
 <project name="android_device_xiaomi_msm8953-common" path="device/xiaomi/msm8953-common" remote="gitlab" />
-<project name="android_kernel_xiaomi_mido" path="kernel/xiaomi/msm8953" remote="gitlab" />
-<project name="proprietary_vendor_xiaomi" path="vendor/xiaomi" remote="gitlab" />
-
-<!-- LineageOS -->
-<project path="kernel/samsung/msm8930-common" name="android_kernel_samsung_msm8930-common" remote="los" />
-<project path="device/samsung/msm8930-common" name="android_device_samsung_msm8930-common" remote="los" />
-<project path="device/samsung/qcom-common" name="android_device_samsung_qcom-common" remote="los" />
-<project path="hardware/samsung" name="android_hardware_samsung" remote="los" />
-<project path="packages/apps/Recorder" name="android_packages_apps_Recorder" remote="los" />
-
-<!-- Melius -->
-<project path="device/samsung/meliusltexx" name="sileshn/device_samsung_meliusltexx" remote="github" revision="8.1.x" />
-<project path="device/samsung/melius-common" name="sileshn/device_samsung_melius-common" remote="github" revision="8.1.x" />
-<project path="vendor/samsung" name="sileshn/proprietary_vendor_samsung" remote="github"  revision="8.1.x" />
+<project name="android_kernel_xiaomi_mido" path="kernel/xiaomi/msm8953" remote="gitlab" revision="lineage-16.0" />
+<project name="proprietary_vendor_xiaomi" path="vendor/xiaomi" remote="gitlab" revision="lineage-16.0" />
 
 </manifest>
