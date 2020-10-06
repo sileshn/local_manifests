@@ -22,4 +22,7 @@
 <project path="vendor/samsung" name="proprietary_vendor_samsung" remote="sileshn"  />
 <project path="device/samsung/msm8930-common" name="android_device_samsung_msm8930-common" remote="sileshn" />
 
+<!-- Twrp -->
+<!-- <project path="bootable/recovery-twrp" name="arco/android_bootable_recovery" remote="github" revision="android-9.0" />-->
+
 </manifest>
