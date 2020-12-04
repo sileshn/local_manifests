@@ -23,18 +23,18 @@
 <remove-project name="device/generic/uml" />
 <remove-project name="device/generic/x86" />
 <remove-project name="device/generic/x86_64" />
-<remove-project name="device/google/atv" />
+<remove-project name="LineageOS/android_device_google_atv" />
 <remove-project name="LineageOS/android_device_lineage_atv" />
 <remove-project name="device/google/contexthub" />
 <remove-project name="device/sample" />
-<remove-project name="platform/prebuilts/clang/host/darwin-x86" />
-<remove-project name="LineageOS/android_prebuilts_gcc_darwin-x86_aarch64_aarch64-linux-android-4.9" />
-<remove-project name="LineageOS/android_prebuilts_gcc_darwin-x86_arm_arm-linux-androideabi-4.9" />
-<remove-project name="platform/prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1" />
-<remove-project name="platform/prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9" />
-<remove-project name="platform/prebuilts/gdb/darwin-x86" />
-<remove-project name="platform/prebuilts/go/darwin-x86" />
-<remove-project name="platform/prebuilts/python/darwin-x86/2.7.5" />
+
+<!-- Temp -->
+<remove-project name="platform/hardware/qcom/sm8150/data/ipacfg-mgr" />
+<remove-project name="platform/hardware/qcom/sm8150/display" />
+<remove-project name="platform/hardware/qcom/sm8150/gps" />
+<remove-project name="platform/hardware/qcom/sm8150/media" />
+<remove-project name="platform/hardware/qcom/sm8150/thermal" />
+<remove-project name="platform/hardware/qcom/sm8150/vr" />
 
 <!-- LineageOS -->
 <project path="kernel/samsung/msm8930-common" name="LineageOS/android_kernel_samsung_msm8930-common" remote="github" />
