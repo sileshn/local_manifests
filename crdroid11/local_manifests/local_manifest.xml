@@ -3,8 +3,23 @@
 
 <remote name="sileshn" 
           sync-c="true" 
-          revision="lineage-17.1" 
+          revision="lineage-18.1" 
           fetch="ssh://git@gitlab.com/sileshn" />
+		  
+<remote name="asus-sdm660-devs" 
+          sync-c="true" 
+          revision="lineage-18.1" 
+          fetch="ssh://git@github.com/asus-sdm660-devs" />
+		  
+<remote name="proton" 
+          sync-c="true" 
+          revision="master" 
+          fetch="ssh://git@github.com/kdrag0n" />
+		  
+<remote name="xiaomi-dirac" 
+          sync-c="true" 
+          revision="11" 
+          fetch="ssh://git@github.com/xiaomi-sdm660" />
 		  
 <!-- Remove -->
 <remove-project name="device/common" />
@@ -25,28 +40,29 @@
 <remove-project name="device/generic/x86" />
 <remove-project name="device/generic/x86_64" />
 <remove-project name="LineageOS/android_device_google_atv" />
-<!--<remove-project name="LineageOS/android_device_lineage_atv" />-->
 <remove-project name="device/google/contexthub" />
 <remove-project name="device/google/vrservices" />
 <remove-project name="device/sample" />
-<remove-project name="platform/prebuilts/clang/host/darwin-x86" />
-<remove-project name="platform/prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.9" />
-<remove-project name="platform/prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.9" />
-<remove-project name="platform/prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1" />
-<remove-project name="platform/prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9" />
-<remove-project name="platform/prebuilts/gdb/darwin-x86" />
-<remove-project name="platform/prebuilts/go/darwin-x86" />
-<remove-project name="platform/prebuilts/python/darwin-x86/2.7.5" />
 
 <!-- LineageOS -->
-<!--<project path="kernel/samsung/msm8930-common" name="LineageOS/android_kernel_samsung_msm8930-common" remote="github" />
 <project path="device/samsung/qcom-common" name="LineageOS/android_device_samsung_qcom-common" remote="github" />
 <project path="hardware/samsung" name="LineageOS/android_hardware_samsung" remote="github" />
-<project path="device/samsung/msm8930-common" name="LineageOS/android_device_samsung_msm8930-common" remote="github" />-->
 
 <!-- Melius -->
-<!--<project path="device/samsung/meliusltexx" name="android_device_samsung_meliusltexx" remote="sileshn" />
+<project path="device/samsung/meliusltexx" name="android_device_samsung_meliusltexx" remote="sileshn" />
 <project path="device/samsung/melius-common" name="android_device_samsung_melius-common" remote="sileshn" />
-<project path="vendor/samsung" name="proprietary_vendor_samsung" remote="sileshn"  />-->
+<project path="vendor/samsung" name="proprietary_vendor_samsung" remote="sileshn"  />
+<project path="kernel/samsung/msm8930-common" name="android_kernel_samsung_msm8930-common" remote="sileshn" />
+<project path="device/samsung/msm8930-common" name="android_device_samsung_msm8930-common" remote="sileshn" />
+
+<!-- X01bd -->
+<project path="device/asus/X01BD" name="android_device_asus_X01BD" remote="asus-sdm660-devs" />
+<project path="device/asus/sdm660-common" name="android_device_asus_sdm660-common" remote="asus-sdm660-devs" />
+<project path="kernel/asus/sdm660" name="android_kernel_asus_sdm660" remote="sileshn" />
+<project path="vendor/asus" name="proprietary_vendor_asus" remote="asus-sdm660-devs" />
+
+<!-- Misc -->
+<project path="packages/apps/Eleven" name="LineageOS/android_packages_apps_Eleven" />
+<project path="prebuilts/clang/host/linux-x86/clang-proton" name="proton-clang" remote="proton" clone-depth="1" />
 
 </manifest>
